@@ -1,26 +1,26 @@
 ---
-views:
-    kursrepo:
-        region: sidebar-right
-        template: anax/v2/block/default
-        data:
-            meta:
-                type: single
-                route: block/om-kursrepo
 
-    redovisa:
-        region: sidebar-right
-        template: anax/v2/block/default
-        data:
-            meta:
-                type: single
-                route: block/om-redovisa
 ---
-Om kursen
+Test med olika konstruktioner av Markdown
 =========================
 
-Kursen Teknisk webbdesign och användbarhet, a.k.a. design, lär webbprogrammeraren att tekniskt förbereda sin webbplats för design och användbarhet.
+Det här är en h2-rubrik
+---------------------
 
-Kursen syftar till en orientering inom områden design och användbarhet, specifikt för tillämpningsområdet webb. Kursen har tekniken som utgångspunkt, där olika tekniker introduceras och används för att underlätta webbdesign och användbarhet för webbplatsen med syftet att skapa en korrekt och användarvänlig webbplats.
 
-[FIGURE src=img/dator.jpg caption="En fin bil som demobild."]
+### Det här är en h3-rubrik
+
+Det här är en text med en *betoning* av ett ord.
+Det här är också en _betoning_.
+
+* Katt
+* Hund
+* Häst
+
+1. Katt
+2. Hund
+3. Häst
+
+Det här är en [länk](http://google.com/).
+
+![alt text](img/dator.jpg "Titel")
