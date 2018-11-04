@@ -256,4 +256,6 @@ html {
 
 .site-footer {
     text-align: center;
+    clear: both;
+    display: block;
 }
