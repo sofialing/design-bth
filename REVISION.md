@@ -1,6 +1,15 @@
 Revision history
 ====================
 
+V1.0.2 (2018-11-06)
+--------------------
+* Changing flash-image
+* Adding page with Markdown tests
+* Minor changes in CSS
+* Adding byline to reports
+* Updating text in byline
+* Added report for kmom01
+
 V1.0.1 (2018-11-04)
 --------------------
 
