@@ -84,11 +84,6 @@ body {
 /**
  * General layout
  */
-.wrap-all {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
 /* Hide submenu, leave this to kmom02 */
 .rm-desktop ul {
   display: none;
@@ -102,6 +97,11 @@ body {
 }
 .left {
   float: left;
+}
+.wrap-all {
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 /* ---------- Header ---------- */
 .region-header {
