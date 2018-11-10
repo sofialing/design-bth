@@ -1,0 +1,31 @@
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900');
+
+@bgColorHtml: #424242;
+@bgColorBody: #fff;
+@colorBody: #333;
+@fontFamilyBody: 'Source Sans Pro', sans-serif;
+@fullWidth: 100%;
+@fullHeight: 100%;
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    overflow-y: scroll;
+    width: @fullWidth;
+    height: @fullHeight;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: @fullWidth;
+    height: @fullHeight;
+    margin: 0;
+    padding: 0;
+    font-family: @fontFamilyBody;
+}
