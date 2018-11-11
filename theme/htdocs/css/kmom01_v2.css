@@ -295,7 +295,7 @@ a:hover {
   margin: 0 auto;
 }
 .footer-column {
-  width: 33%;
+  width: 25%;
   float: left;
   padding: 1em;
 }
@@ -386,6 +386,17 @@ a:hover {
   .footer-column {
     width: 100%;
     padding: 0;
+  }
+  .footer-column ul {
+    padding-left: 0;
+  }
+  .footer-column li {
+    list-style-type: none;
+    display: inline-block;
+    padding-right: 0.5em;
+  }
+  .site-footer {
+    text-align: left;
   }
   .figure {
     max-width: 100%;

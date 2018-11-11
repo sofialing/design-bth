@@ -80,6 +80,10 @@ return [
                     [
                         "template" => "anax/v2/block/default",
                         "contentRoute" => "block/footer-col-3",
+                    ],
+                    [
+                        "template" => "anax/v2/block/default",
+                        "contentRoute" => "block/footer-col-4",
                     ]
                 ]
             ],
