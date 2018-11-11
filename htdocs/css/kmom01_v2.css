@@ -124,7 +124,7 @@ a:hover {
   padding: 1em;
   background-color: #fff;
 }
-.region-header a {
+.rm-default a {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 600;
@@ -133,7 +133,7 @@ a:hover {
   font-size: 1em;
   letter-spacing: 0.04em;
 }
-.region-header a:hover {
+.rm-default a:hover {
   border-bottom: 1px solid black;
 }
 .site-logo {
@@ -142,6 +142,8 @@ a:hover {
 .site-logo-text a {
   font-size: 2em;
   color: #242426;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 .my-navbar {
   display: inline-block;
@@ -352,8 +354,8 @@ a:hover {
   .rm-max .rm-mobile a {
     padding: 1em !important;
   }
-  .rm-menu-button:hover {
-    border-bottom: none;
+  a.rm-button {
+    margin-top: 0.75em;
   }
   .rm-max .rm-mobile .rm-submenu-button {
     margin-right: 1.5em;

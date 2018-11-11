@@ -13,34 +13,35 @@
  */
 
  /* ---------- Header ---------- */
- .inner-wrap-header {
+.inner-wrap-header {
     max-width: 100%;
- }
+}
 
- .region-header-col-1 {
-     display: inline-block;
-     width: 30%;
-     float: left;
- }
+.region-header-col-1 {
+    display: inline-block;
+    width: 30%;
+    float: left;
+}
 
- .region-header-col-2 {
-     width: 70%;
-     float: right;
-     text-align: right;
- }
+.region-header-col-2 {
+    width: 70%;
+    float: right;
+    text-align: right;
+}
 
- .region-header a:hover {
-     border-bottom: 1px solid @greenColor;
-     text-decoration: none !important;
- }
+.site-logo-text-icon img {
+    display: none;
+}
 
- .region-header a {
+.rm-default li a {
      padding: 0.5em !important;
- }
-
-.rm-button:hover,
-.site-logo-text a:hover {
-    border-bottom: 0;
+     margin: 0;
+     &:hover {
+         background-color: @greenColor;
+         color: #fff;
+         border-bottom: none;
+         text-decoration: none !important;
+     }
 }
 
 .rm-default li li {
@@ -54,10 +55,6 @@
         color: #fff;
     }
 }
-a.rm-button.rm-clicked .rm-button-face-2 {
-    color: #fff;
-}
-
 
 /* ---------- Breadcrumb & navigation ---------- */
 .breadcrumb-list li::after {
