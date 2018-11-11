@@ -230,7 +230,7 @@ a:hover {
   padding: 0;
 }
 .breadcrumb-list li::after {
-  content: " > ";
+  content: "  /  ";
 }
 .toc ul {
   margin: 0;

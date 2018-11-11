@@ -4752,7 +4752,7 @@ a:hover {
   padding: 0;
 }
 .breadcrumb-list li::after {
-  content: " > ";
+  content: "  /  ";
 }
 .toc ul {
   margin: 0;
@@ -4873,6 +4873,45 @@ a:hover {
 }
 a.rm-button.rm-clicked .rm-button-face-2 {
   color: #fff;
+}
+/* ---------- Breadcrumb & navigation ---------- */
+.breadcrumb-list li::after {
+  content: "  /  ";
+  color: #478979;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+.breadcrumb-list li:last-child::after {
+  content: " ";
+}
+.toc ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.toc a,
+.next-previous a {
+  color: black;
+  line-height: 1.75;
+  text-decoration: none;
+}
+.toc a:hover,
+.next-previous a:hover,
+.breadcrumb-list a:hover {
+  text-decoration: underline;
+  color: #478979;
+}
+.toc h4 {
+  background-color: #478979;
+  color: #fff;
+  font-size: 1.25em;
+  text-transform: uppercase;
+  padding: 0.5em;
+  margin: 0 0 0.5em 0;
+}
+/* ---------- Figure---------- */
+.figure.right {
+  margin-right: 0;
 }
 /**
  * Layout for responsive style through media queries.
