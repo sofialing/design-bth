@@ -70,6 +70,22 @@ body {
   padding: 0;
   font-family: 'Source Sans Pro', sans-serif;
 }
+img {
+  max-width: 100%;
+}
+.outer-wrap-main {
+  width: 80%;
+  min-height: 600px;
+  margin: 0 auto;
+  padding-bottom: 2.5em;
+  overflow: auto;
+}
+a {
+  color: #478979;
+}
+a:hover {
+  text-decoration: none;
+}
 /**
  * Layout style for general structure of header, navbar, main, footer
  * and other regions of the page including route specific styles.
@@ -85,10 +101,6 @@ body {
  * General layout
  */
 /* Hide submenu, leave this to kmom02 */
-.rm-desktop ul {
-  display: none;
-}
-/* Hide responsive/mobile menu, leave this to kmom02 */
 .rm-navbar-max {
   display: none;
 }
@@ -116,7 +128,7 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 600;
-  color: black;
+  color: #242426;
   padding-bottom: 0.25em;
   font-size: 1em;
   letter-spacing: 0.04em;
@@ -129,7 +141,7 @@ body {
 }
 .site-logo-text a {
   font-size: 2em;
-  color: black;
+  color: #242426;
 }
 .my-navbar {
   display: inline-block;
@@ -157,30 +169,32 @@ body {
   width: 100%;
 }
 /* ---------- Main content ---------- */
-.outer-wrap-main,
+.region-main {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1.5em;
+  float: left;
+}
+.region-main.has-sidebar {
+  width: 70%;
+}
+.region-main.has-sidebar-left.has-sidebar-right {
+  width: 60%;
+}
+.region-sidebar-left,
+.region-sidebar-right {
+  width: 30%;
+  float: left;
+  padding: 1.5em;
+}
+.region-sidebar-left.has-sidebar-right,
+.region-sidebar-right.has-sidebar-left {
+  width: 20%;
+}
 .outer-wrap-breadcrumb {
   width: 80%;
   margin: 0 auto;
   padding: 1.5em;
-}
-.outer-wrap-main img {
-  width: 100%;
-}
-.outer-wrap-main {
-  min-height: 600px;
-  padding-bottom: 2.5em;
-  overflow: auto;
-}
-.has-sidebar {
-  width: 70%;
-  display: inline-block;
-  float: left;
-}
-.wrap-sidebar {
-  width: 30%;
-}
-.region-main.has-sidebar-right.has-sidebar {
-  padding-right: 1.5em;
 }
 .row::after {
   content: "";
@@ -251,7 +265,7 @@ body {
 }
 /* ---------- Byline ---------- */
 .author-byline {
-  background-color: #bdc3c7;
+  background-color: #41588A;
   clear: both;
   width: auto;
   overflow: auto;
@@ -271,10 +285,14 @@ body {
 }
 /* ---------- Footer ---------- */
 .outer-wrap-footer {
-  background-color: #2e3131;
+  background-color: #242426;
   color: white;
   padding: 1em;
   clear: both;
+}
+.inner-wrap-footer {
+  width: 80%;
+  margin: 0 auto;
 }
 .footer-column {
   width: 33%;
@@ -291,6 +309,41 @@ body {
  */
 @media screen and (max-width: 1500px) {
   .site-logo {
+    display: none;
+  }
+}
+@media screen and (max-width: 900px) {
+  .rm-desktop li {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .site-header a {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media screen and (max-width: 810px) {
+  .region-header-col-2 {
+    display: none;
+  }
+  .region-header-col-3,
+  .region-header-col-1 {
+    display: inline;
+    width: 50%;
+    float: right;
+  }
+  .rm-small {
+    display: block;
+  }
+  .rm-navbar-max {
+    display: block;
+  }
+  .rm-desktop {
+    display: none;
+  }
+}
+@media screen and (min-width: 680px) {
+  .rm-small {
     display: none;
   }
 }
@@ -328,3 +381,11 @@ body {
 /**
  * My own settings, not currently in their own module.
  */
+/* Hide submenu, leave this to kmom02 */
+.rm-desktop ul {
+  display: none;
+}
+/* Hide responsive/mobile menu, leave this to kmom02 */
+.rm-navbar-max {
+  display: none;
+}

@@ -4318,317 +4318,6 @@ template {
  * to style up the website so it is useable.
  */
 /**
- * Style for the stylechooser.
- */
-/**
- * Variables
- */
-/**
- * Style
- */
-/**
- * Base style to affect HTML elements on a general scale.
- */
-/**
- * Base style to affect HTML elements on a general scale.
- */
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdr.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7g.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlxdr.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 900;
-  src: local('Source Sans Pro Black'), local('SourceSansPro-Black'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xKydSBYKcSV-LCoeQqfX1RYOo3iu4nwlxdr.ttf) format('truetype');
-}
-* {
-  box-sizing: border-box;
-}
-html {
-  overflow-y: scroll;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-body {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  font-family: 'Source Sans Pro', sans-serif;
-}
-/**
- * Layout style for general structure of header, navbar, main, footer
- * and other regions of the page including route specific styles.
- */
-/**
- * Layout style for general structure of header, navbar, main, footer
- * and other regions of the page including route specific styles.
- */
-/**
- * Variables
- */
-/**
- * General layout
- */
-/* Hide submenu, leave this to kmom02 */
-.rm-desktop ul {
-  display: none;
-}
-/* Hide responsive/mobile menu, leave this to kmom02 */
-.rm-navbar-max {
-  display: none;
-}
-.right {
-  float: right;
-}
-.left {
-  float: left;
-}
-.wrap-all {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-/* ---------- Header ---------- */
-.region-header {
-  height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1em;
-  background-color: #fff;
-}
-.region-header a {
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 600;
-  color: black;
-  padding-bottom: 0.25em;
-  font-size: 1em;
-  letter-spacing: 0.04em;
-}
-.region-header a:hover {
-  border-bottom: 1px solid black;
-}
-.site-logo {
-  display: none;
-}
-.site-logo-text a {
-  font-size: 2em;
-  color: black;
-}
-.my-navbar {
-  display: inline-block;
-  padding: 0;
-  list-style: none;
-  margin: 0;
-}
-.my-navbar > li {
-  display: inline-block;
-  margin: 5px;
-  padding: 5px;
-}
-.region-header-col-1 {
-  display: inline;
-  float: left;
-}
-.region-header-col-2 {
-  display: inline;
-  float: right;
-}
-.region-header-col-3 {
-  display: none;
-}
-.region-flash img {
-  width: 100%;
-}
-/* ---------- Main content ---------- */
-.outer-wrap-main,
-.outer-wrap-breadcrumb {
-  width: 80%;
-  margin: 0 auto;
-  padding: 1.5em;
-}
-.outer-wrap-main img {
-  width: 100%;
-}
-.outer-wrap-main {
-  min-height: 600px;
-  padding-bottom: 2.5em;
-  overflow: auto;
-}
-.has-sidebar {
-  width: 70%;
-  display: inline-block;
-  float: left;
-}
-.wrap-sidebar {
-  width: 30%;
-}
-.region-main.has-sidebar-right.has-sidebar {
-  padding-right: 1.5em;
-}
-.row::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-/* ---------- Breadcrumb and navigation ---------- */
-.next-previous {
-  margin-bottom: 24px;
-}
-.next-previous .next {
-  float: right;
-  text-align: right;
-}
-.breadcrumb-list a {
-  font-size: 0.75em;
-  text-decoration: none;
-  color: black;
-  margin-bottom: 1.5em;
-}
-.breadcrumb-list a:hover {
-  text-decoration: underline;
-  color: #bdc3c7;
-}
-.breadcrumb-list ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-.breadcrumb-list li {
-  display: inline;
-  margin: 0;
-  padding: 0;
-}
-.breadcrumb-list li::after {
-  content: " > ";
-}
-.toc ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-.toc a,
-.next-previous a {
-  color: black;
-  line-height: 1.75;
-  text-decoration: none;
-}
-.toc a:hover,
-.next-previous a:hover {
-  text-decoration: underline;
-  color: #bdc3c7;
-}
-/* ---------- Flashmessage ---------- */
-.flashmessage {
-  background-color: #bdc3c7;
-  padding: 1em;
-  width: 80%;
-  margin: 1em auto;
-}
-.flashmessage .flashmessage-icon {
-  float: right;
-  font-size: 3em;
-}
-.flashmessage p {
-  margin-top: 25px;
-  margin-bottom: 25px;
-}
-/* ---------- Byline ---------- */
-.author-byline {
-  background-color: #bdc3c7;
-  clear: both;
-  width: auto;
-  overflow: auto;
-  padding: 1em;
-  margin: 1.5em 0;
-  color: white;
-  font-weight: 300;
-  font-size: 18px;
-}
-.author-byline a {
-  color: white;
-}
-.author-byline img {
-  width: 100px;
-  float: left;
-  margin-right: 1em;
-}
-/* ---------- Footer ---------- */
-.outer-wrap-footer {
-  background-color: #2e3131;
-  color: white;
-  padding: 1em;
-  clear: both;
-}
-.footer-column {
-  width: 33%;
-  float: left;
-  padding: 1em;
-}
-.site-footer {
-  text-align: center;
-  clear: both;
-  display: block;
-}
-/**
- * Layout for responsive style through media queries.
- */
-@media screen and (max-width: 1500px) {
-  .site-logo {
-    display: none;
-  }
-}
-/**
- * Show off the regions used in the website, to ease styling.
- */
-.regions .outer-wrap {
-  background-color: #f4e3c9;
-  border: 1px solid #e3b774;
-}
-.regions .inner-wrap {
-  background-color: #f4e0e9;
-  border: 1px solid #d995b4;
-}
-.regions .region-header-col-1,
-.regions .region-header-col-2,
-.regions .region-header-col-3,
-.regions .region-flash,
-.regions .region-breadcrumb,
-.regions .region-flash-message,
-.regions .region-columns-above,
-.regions .region-main,
-.regions .region-after-main,
-.regions .region-columns-below,
-.regions .region-sidebar-left,
-.regions .region-sidebar-right,
-.regions .region-footer,
-.regions .region-footer-column-1,
-.regions .region-footer-column-2,
-.regions .region-footer-column-3 {
-  background-color: #b5dce1;
-  border: 1px solid #6cbac4;
-  color: #111;
-}
-/**
  * A responsive menu.
  */
 /**
@@ -4857,13 +4546,366 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   right: 0;
 }
 /**
- * Style for responsive menu
+ * Base style to affect HTML elements on a general scale.
  */
 /**
-  * Example on media queries
-  */
-@media screen and (max-width: 680px) {
+ * Base style to affect HTML elements on a general scale.
+ */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdr.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7g.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlxdr.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Source Sans Pro Black'), local('SourceSansPro-Black'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xKydSBYKcSV-LCoeQqfX1RYOo3iu4nwlxdr.ttf) format('truetype');
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  overflow-y: scroll;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+img {
+  max-width: 100%;
+}
+.outer-wrap-main {
+  width: 80%;
+  min-height: 600px;
+  margin: 0 auto;
+  padding-bottom: 2.5em;
+  overflow: auto;
+}
+a {
+  color: #478979;
+}
+a:hover {
+  text-decoration: none;
+}
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+/**
+ * Variables
+ */
+/**
+ * General layout
+ */
+/* Hide submenu, leave this to kmom02 */
+.rm-navbar-max {
+  display: none;
+}
+.right {
+  float: right;
+}
+.left {
+  float: left;
+}
+.wrap-all {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+/* ---------- Header ---------- */
+.region-header {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+  background-color: #fff;
+}
+.region-header a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #242426;
+  padding-bottom: 0.25em;
+  font-size: 1em;
+  letter-spacing: 0.04em;
+}
+.region-header a:hover {
+  border-bottom: 1px solid black;
+}
+.site-logo {
+  display: none;
+}
+.site-logo-text a {
+  font-size: 2em;
+  color: #242426;
+}
+.my-navbar {
+  display: inline-block;
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+.my-navbar > li {
+  display: inline-block;
+  margin: 5px;
+  padding: 5px;
+}
+.region-header-col-1 {
+  display: inline;
+  float: left;
+}
+.region-header-col-2 {
+  display: inline;
+  float: right;
+}
+.region-header-col-3 {
+  display: none;
+}
+.region-flash img {
+  width: 100%;
+}
+/* ---------- Main content ---------- */
+.region-main {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1.5em;
+  float: left;
+}
+.region-main.has-sidebar {
+  width: 70%;
+}
+.region-main.has-sidebar-left.has-sidebar-right {
+  width: 60%;
+}
+.region-sidebar-left,
+.region-sidebar-right {
+  width: 30%;
+  float: left;
+  padding: 1.5em;
+}
+.region-sidebar-left.has-sidebar-right,
+.region-sidebar-right.has-sidebar-left {
+  width: 20%;
+}
+.outer-wrap-breadcrumb {
+  width: 80%;
+  margin: 0 auto;
+  padding: 1.5em;
+}
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* ---------- Breadcrumb and navigation ---------- */
+.next-previous {
+  margin-bottom: 24px;
+}
+.next-previous .next {
+  float: right;
+  text-align: right;
+}
+.breadcrumb-list a {
+  font-size: 0.75em;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 1.5em;
+}
+.breadcrumb-list a:hover {
+  text-decoration: underline;
+  color: #bdc3c7;
+}
+.breadcrumb-list ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.breadcrumb-list li {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+.breadcrumb-list li::after {
+  content: " > ";
+}
+.toc ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.toc a,
+.next-previous a {
+  color: black;
+  line-height: 1.75;
+  text-decoration: none;
+}
+.toc a:hover,
+.next-previous a:hover {
+  text-decoration: underline;
+  color: #bdc3c7;
+}
+/* ---------- Flashmessage ---------- */
+.flashmessage {
+  background-color: #bdc3c7;
+  padding: 1em;
+  width: 80%;
+  margin: 1em auto;
+}
+.flashmessage .flashmessage-icon {
+  float: right;
+  font-size: 3em;
+}
+.flashmessage p {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+/* ---------- Byline ---------- */
+.author-byline {
+  background-color: #41588A;
+  clear: both;
+  width: auto;
+  overflow: auto;
+  padding: 1em;
+  margin: 1.5em 0;
+  color: white;
+  font-weight: 300;
+  font-size: 18px;
+}
+.author-byline a {
+  color: white;
+}
+.author-byline img {
+  width: 100px;
+  float: left;
+  margin-right: 1em;
+}
+/* ---------- Footer ---------- */
+.outer-wrap-footer {
+  background-color: #242426;
+  color: white;
+  padding: 1em;
+  clear: both;
+}
+.inner-wrap-footer {
+  width: 80%;
+  margin: 0 auto;
+}
+.footer-column {
+  width: 33%;
+  float: left;
+  padding: 1em;
+}
+.site-footer {
+  text-align: center;
+  clear: both;
+  display: block;
+}
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+/**
+ * Variables
+ */
+/**
+ * General layout
+ */
+/* ---------- Header ---------- */
+.inner-wrap-header {
+  max-width: 100%;
+}
+.region-header-col-1 {
+  display: inline-block;
+  width: 30%;
+  float: left;
+}
+.region-header-col-2 {
+  width: 70%;
+  float: right;
+  text-align: right;
+}
+.region-header a:hover {
+  border-bottom: 1px solid #478979;
+  text-decoration: none !important;
+}
+.region-header a {
+  padding: 0.5em !important;
+}
+.rm-button:hover,
+.site-logo-text a:hover {
+  border-bottom: 0;
+}
+.rm-default li li {
+  background-color: #fff;
+  text-align: left;
+}
+.rm-max .rm-mobile {
+  background-color: #478979;
+}
+.rm-max .rm-mobile a {
+  color: #fff;
+}
+a.rm-button.rm-clicked .rm-button-face-2 {
+  color: #fff;
+}
+/**
+ * Layout for responsive style through media queries.
+ */
+@media screen and (max-width: 1500px) {
+  .site-logo {
+    display: none;
+  }
+}
+@media screen and (max-width: 900px) {
+  .rm-desktop li {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .site-header a {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media screen and (max-width: 810px) {
+  .region-header-col-2 {
+    display: none;
+  }
+  .region-header-col-3,
+  .region-header-col-1 {
+    display: inline;
+    width: 50%;
+    float: right;
+  }
   .rm-small {
+    display: block;
+  }
+  .rm-navbar-max {
     display: block;
   }
   .rm-desktop {
@@ -4874,6 +4916,37 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   .rm-small {
     display: none;
   }
+}
+/**
+ * Show off the regions used in the website, to ease styling.
+ */
+.regions .outer-wrap {
+  background-color: #f4e3c9;
+  border: 1px solid #e3b774;
+}
+.regions .inner-wrap {
+  background-color: #f4e0e9;
+  border: 1px solid #d995b4;
+}
+.regions .region-header-col-1,
+.regions .region-header-col-2,
+.regions .region-header-col-3,
+.regions .region-flash,
+.regions .region-breadcrumb,
+.regions .region-flash-message,
+.regions .region-columns-above,
+.regions .region-main,
+.regions .region-after-main,
+.regions .region-columns-below,
+.regions .region-sidebar-left,
+.regions .region-sidebar-right,
+.regions .region-footer,
+.regions .region-footer-column-1,
+.regions .region-footer-column-2,
+.regions .region-footer-column-3 {
+  background-color: #b5dce1;
+  border: 1px solid #6cbac4;
+  color: #111;
 }
 /**
  * My own settings, not currently in their own module.

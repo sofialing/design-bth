@@ -6,6 +6,11 @@
 /**
  * Variables
  */
+ @darkColor: #242426;
+ @blueColor: #41588A;
+ @pinkColor: #72394C;
+ @greenColor: #478979;
+ @orangeColor: #BE895C;
 
 
 /**
@@ -13,11 +18,11 @@
  */
 
 /* Hide submenu, leave this to kmom02 */
-.rm-desktop ul {
-    display: none;
-}
+// .rm-desktop ul {
+//      display: none;
+// }
 
-/* Hide responsive/mobile menu, leave this to kmom02 */
+// /* Hide responsive/mobile menu, leave this to kmom02 */
 .rm-navbar-max {
     display: none;
 }
@@ -50,7 +55,7 @@
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 600;
-    color: black;
+    color: @darkColor;
     padding-bottom: 0.25em;
     font-size: 1em;
     letter-spacing: 0.04em;
@@ -66,7 +71,7 @@
 
 .site-logo-text a {
     font-size: 2em;
-    color: black;
+    color: @darkColor;
 }
 
 .my-navbar {
@@ -101,35 +106,39 @@
 }
 
 /* ---------- Main content ---------- */
-.outer-wrap-main,
+
+.region-main {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1.5em;
+    float: left;
+    &.has-sidebar {
+        width: 70%;
+    }
+    &.has-sidebar-left.has-sidebar-right {
+        width: 60%;
+    }
+}
+
+.region-sidebar-left,
+.region-sidebar-right {
+    width: 30%;
+    float: left;
+    padding: 1.5em;
+}
+
+.region-sidebar-left.has-sidebar-right,
+.region-sidebar-right.has-sidebar-left {
+    width: 20%;
+}
+
+
 .outer-wrap-breadcrumb {
     width: 80%;
     margin: 0 auto;
     padding: 1.5em;
 }
 
-.outer-wrap-main img {
-    width: 100%;
-}
-.outer-wrap-main {
-    min-height: 600px;
-    padding-bottom: 2.5em;
-    overflow: auto;
-}
-
-.has-sidebar {
-    width: 70%;
-    display: inline-block;
-    float: left;
-}
-
-.wrap-sidebar {
-    width: 30%;
-}
-
-.region-main.has-sidebar-right.has-sidebar {
-    padding-right: 1.5em;
-}
 
 .row::after {
     content: "";
@@ -214,7 +223,7 @@
 
 /* ---------- Byline ---------- */
 .author-byline {
-    background-color: #bdc3c7;
+    background-color: @blueColor;
     clear: both;
     width: auto;
     overflow: auto;
@@ -237,10 +246,15 @@
 
 /* ---------- Footer ---------- */
 .outer-wrap-footer {
-    background-color: #2e3131;
+    background-color:  @darkColor;
     color: white;
     padding: 1em;
     clear: both;
+}
+
+.inner-wrap-footer {
+    width: 80%;
+    margin: 0 auto;
 }
 
 .footer-column {
