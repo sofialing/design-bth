@@ -7,3 +7,44 @@
         display: none;
     }
 }
+
+@media screen and (max-width: 900px) {
+    .rm-desktop li {
+        margin-left: 0;
+        margin-right: 0;
+     }
+    .site-header a {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .region-header-col-2 {
+        display: none;
+    }
+    .region-header-col-3,
+    .region-header-col-1 {
+        display: inline;
+        width: 50%;
+        float: right;
+    }
+
+    .rm-small {
+        display: block;
+    }
+
+    .rm-navbar-max {
+        display: block;
+    }
+
+    .rm-desktop {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 680px) {
+    .rm-small {
+        display: none;
+    }
+}
