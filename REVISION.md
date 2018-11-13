@@ -1,6 +1,19 @@
 Revision history
 ====================
 
+V2.0.0 (2018-11-14)
+* Added report for kmom02
+* Added one more column to footer
+* Updating style for header
+* Updating footer content and style
+* Changing default style to kmom02
+* Updates the responsive stylesheet
+* Updates the style for breadcrumbs and table of contents
+* Added responsive style through media queries
+* Updates stylesheet for kmom02
+* Added stylesheets for theme kmom02
+* Created new theme for kmom02
+
 V1.0.2 (2018-11-06)
 --------------------
 * Changing flash-image
