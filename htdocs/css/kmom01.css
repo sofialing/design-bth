@@ -260,3 +260,7 @@ html {
     clear: both;
     display: block;
 }
+
+.footer-column-4 {
+    display: none;
+}
