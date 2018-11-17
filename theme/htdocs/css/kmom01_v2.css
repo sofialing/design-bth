@@ -74,13 +74,6 @@ body {
 img {
   max-width: 100%;
 }
-.outer-wrap-main {
-  width: 80%;
-  min-height: 600px;
-  margin: 0 auto;
-  padding-bottom: 2.5em;
-  overflow: auto;
-}
 a {
   color: #478979;
 }
@@ -172,6 +165,13 @@ a:hover {
   width: 100%;
 }
 /* ---------- Main content ---------- */
+.outer-wrap-main {
+  width: 80%;
+  min-height: 600px;
+  margin: 0 auto;
+  padding-bottom: 2.5em;
+  overflow: auto;
+}
 .region-main {
   width: 100%;
   margin: 0 auto;
