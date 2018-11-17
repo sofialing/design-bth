@@ -42,6 +42,23 @@
 
 
 /**
+ * Import the vertical grid.
+ */
+@import "@desinax/vertical-grid/less/grid.less";
+
+// Default grid, change to fit your requirements.
+// @columnWidth:   30;
+// @gutterWidth:   10;
+// @columns:       24;
+// @gridType:      "float"; // "flex"
+
+.row {
+    #desinax-vgrid.row();
+    margin-bottom: 12px;
+}
+
+
+/**
  * Layout style for general structure of header, navbar, main, footer
  * and other regions of the page including route specific styles.
  */
