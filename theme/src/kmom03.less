@@ -37,7 +37,16 @@
 /**
  * Base style to affect HTML elements on a general scale.
  */
-@import "base/base.less";
+@import url("https://use.typekit.net/nqn8aqk.css");
+@import "base/base_kmom03.less";
+
+
+
+/**
+ * Import the typographic grid.
+ */
+@import "@desinax/typographic-grid/less/typography-font-families.less";
+@import "@desinax/typographic-grid/less/typography-defaults.less";
 
 
 
@@ -73,5 +82,13 @@
 /**
  * My own settings, not currently in their own module.
  */
-
  @bylineBGcolor: #3F598E;
+
+ // Default font-families
+ @fontFamilyHeadings: futura-pt, sans-serif;
+ @fontFamilyBody:     futura-pt, sans-serif;
+ @fontFamilyCode:     futura-pt, sans-serif;
+
+ // Magic number and base fontsize
+ @magicNumber:  24px;  // 22px
+ @fontSizeBody: 18px;
