@@ -9,36 +9,29 @@
 @fullWidth: 100%;
 @fullHeight: 100%;
 
-* {
-    box-sizing: border-box;
-}
+// * {
+//     box-sizing: border-box;
+// }
 
 html {
-    // overflow-y: scroll;
-    // width: @fullWidth;
-    // height: @fullHeight;
-    // margin: 0;
-    // padding: 0;
+    width: @fullWidth;
+    height: @fullHeight;
+    margin: 0;
+    padding: 0;
     background-color: @bgColorHtml;
 }
 
 // Activate the grid base font
 body {
-    // width: @fullWidth;
-    // height: @fullHeight;
-    // margin: 0;
-    // padding: 0;
+    width: @fullWidth;
+    height: @fullHeight;
+    margin: 0;
+    padding: 0;
     #desinax-hgrid.font(@fontSizeBody, @fontFamily: @defaultFont);
 }
 
 // Activate grid and affect all typographic elements
 #desinax-hgrid.activateDefaultTypography();
-
-// Show the grid
-.hgrid .inner-wrap {
-    @gridImage: "../img/theme/magic-number-@{magicNumber}.png";
-    #desinax-hgrid.showGrid(@gridImage);
-}
 
 
 img {

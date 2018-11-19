@@ -23,8 +23,6 @@
 /**
  * Internal self contained modules, save in directory module/.
  */
-//@import "module/kmom01.less";
-
 
 
 /**
@@ -48,6 +46,11 @@
 @import "@desinax/typographic-grid/less/typography-font-families.less";
 @import "@desinax/typographic-grid/less/typography-defaults.less";
 
+// Show the grid
+html.hgrid .inner-wrap {
+    @gridImage: "../img/theme/magic-number-@{magicNumber}.png";
+    #desinax-hgrid.showGrid(@gridImage);
+}
 
 
 /**
@@ -56,21 +59,13 @@
 @import "@desinax/vertical-grid/less/grid.less";
 @import "layout/vgrid.less";
 
-// Default grid, change to fit your requirements.
-// @columnWidth:   30;
-// @gutterWidth:   30;
-// @columns:       24;
-// @gridType:      "float"; // "flex"
-
 
 
 /**
  * Layout style for general structure of header, navbar, main, footer
  * and other regions of the page including route specific styles.
  */
-//@import "layout/layout.less";
-//@import "layout/layout_kmom02.less";
-@import "layout/responsive.less";
+@import "layout/responsive_kmom03.less";
 @import "layout/regions.less";     // To add style for ?regions
 
 
@@ -78,13 +73,17 @@
 /**
  * My own settings, not currently in their own module.
  */
- @bylineBGcolor: #3F598E;
+@bylineBGcolor:            #3F598E;
+@maxButtonSubmenuBgColor:  @greenColor;
+@maxButtonClickedColor:    #fff;
 
  // Default font-families
- @fontFamilyHeadings: futura-pt, sans-serif;
- @fontFamilyBody:     futura-pt, sans-serif;
- @fontFamilyCode:     futura-pt, sans-serif;
+ @fontFamilyHeadings:       futura-pt, sans-serif;
+ @fontFamilyBody:           futura-pt, sans-serif;
+ @fontFamilyCode:           futura-pt, sans-serif;
+ @borderSizeH1:             0;
+
 
  // Magic number and base fontsize
- @magicNumber:  24px;  // 22px
- @fontSizeBody: 18px;
+ @magicNumber:              24px;  // 22px
+ @fontSizeBody:             18px;
