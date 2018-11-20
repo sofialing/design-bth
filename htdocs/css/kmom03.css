@@ -4954,7 +4954,7 @@ html.hgrid .inner-wrap {
   width: 101.04166667%;
   margin-left: -0.52083333%;
   margin-right: -0.52083333%;
-  margin-bottom: 12px;
+  margin-bottom: 0;
 }
 .row::after {
   content: "";
@@ -5058,12 +5058,14 @@ html.hgrid .inner-wrap {
   max-width: 100%;
   box-sizing: border-box;
 }
-.region-fash {
+.region-flash {
   display: inline;
   float: left;
   width: 98.95833333%;
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
+  margin-bottom: 24px;
+  max-height: 480px;
 }
 /* ---------- Main content ---------- */
 .outer-wrap-main {
@@ -5075,6 +5077,7 @@ html.hgrid .inner-wrap {
   width: 98.95833333%;
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
+  margin-bottom: 24px;
 }
 .region-main.has-sidebar {
   display: inline;
@@ -5115,6 +5118,7 @@ html.hgrid .inner-wrap {
   width: 98.95833333%;
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
+  margin-bottom: 24px;
 }
 .next-previous,
 .breadcrumb-list {
@@ -5205,12 +5209,12 @@ html.hgrid .inner-wrap {
 .outer-wrap-footer {
   background-color: #242426;
   color: white;
-  padding-bottom: 24px;
 }
 .region-footer h3 {
   font-size: 1.5em;
   line-height: 1.77777778;
   border-bottom: none;
+  margin-bottom: 24px;
 }
 .footer-column {
   display: inline;
@@ -5229,7 +5233,7 @@ html.hgrid .inner-wrap {
   border-top: 1px solid #fff;
 }
 .site-footer p {
-  border-bottom: 12px;
+  border-bottom: 24px;
 }
 /**
  * Layout style for general structure of header, navbar, main, footer
