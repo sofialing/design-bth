@@ -5120,8 +5120,6 @@ html.hgrid .inner-wrap {
 .breadcrumb-list {
   font-size: 0.875em;
   line-height: 1.52380952;
-  margin-bottom: 24px;
-  margin-top: 0px;
 }
 .next-previous .next {
   float: right;
@@ -5161,6 +5159,7 @@ html.hgrid .inner-wrap {
   color: #fff;
   padding-left: 0.5em;
   border-bottom: 0px;
+  margin-top: 0;
 }
 /* ---------- Figure---------- */
 .figure.right {
@@ -5182,17 +5181,25 @@ html.hgrid .inner-wrap {
   width: 98.95833333%;
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
+  background-color: #41588A;
   box-sizing: border-box;
   font-size: 18px;
+  padding: 12px;
   color: black;
+  margin-bottom: 12px;
+  margin-top: 0;
 }
 .author-byline a {
   color: white;
 }
+.author-byline p {
+  margin-bottom: 0;
+  color: #fff;
+}
 .author-byline img {
-  width: 100px;
+  width: 120px;
   float: left;
-  margin-right: 1em;
+  margin-right: 12px;
 }
 /* ---------- Footer---------- */
 .outer-wrap-footer {
@@ -5313,6 +5320,12 @@ html.hgrid .inner-wrap {
     list-style-type: none;
     display: inline-block;
     padding-right: 0.5em;
+  }
+  .region-footer h3 {
+    border-bottom: 1px solid #fff;
+  }
+  .footer-column ul {
+    margin-top: 0px;
   }
   .site-footer {
     text-align: left;
