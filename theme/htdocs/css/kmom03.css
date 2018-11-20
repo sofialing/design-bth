@@ -5065,7 +5065,15 @@ html.hgrid .inner-wrap {
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
   margin-bottom: 24px;
-  max-height: 480px;
+  background-image: url("../img/kod_v2.jpg");
+  background-color: black;
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.region-flash img {
+  display: none;
 }
 /* ---------- Main content ---------- */
 .outer-wrap-main {
