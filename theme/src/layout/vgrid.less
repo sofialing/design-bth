@@ -10,6 +10,7 @@
  @pinkColor: #72394C;
  @greenColor: #478979;
  @orangeColor: #BE895C;
+ @backgroundColor: #f2efe9;
 
 /**
  * General layout
@@ -24,6 +25,7 @@
     float: right;
 }
 
+
 .left {
     float: left;
 }
@@ -34,13 +36,13 @@
 }
 
 .inner-wrap {
-    #desinax-vgrid.grid(1100px);
+    #desinax-vgrid.grid(1120px);
 }
 
 .vgrid .inner-wrap {
     @gridImage: "../img/theme/grid_24x30x10-nomargin.png";
     //@gridImage: "../../img/grid_12x60x20-nomargin.png";
-    #desinax-vgrid.showGrid(@gridImage, 1100px);
+    #desinax-vgrid.showGrid(@gridImage, 1120px);
 
     &.inner-wrap-header,
     &.inner-wrap-flash {
@@ -49,17 +51,22 @@
 }
 
  /* ---------- Header ---------- */
+
+ .outer-wrap-header {
+     #desinax-vgrid.grid(100%);
+     background-color: #fff;
+ }
+
 .inner-wrap-header {
     #desinax-vgrid.grid(98%);
 }
 
 .region-header {
-    height: 58px;
+    height: 72px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     box-sizing: border-box;
-    background-color: #fff;
     &-col-1 {
         #desinax-vgrid.column(6);
     }
@@ -82,7 +89,7 @@
     & a {
         color: @darkColor;
         text-decoration: none;
-        margin-bottom: 12px;
+        margin-bottom: 24px;
     }
 }
 
@@ -120,13 +127,14 @@
 
 .region-flash {
     #desinax-vgrid.column(@columns);
-    margin-bottom: 24px;
+    margin-bottom: 0;
+    height: 408px;
     background-image: url("../img/kod_v2.jpg");
     background-color: black;
     background-size: cover;
     background-position: bottom center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
     & img {
         display: none;
     }
@@ -135,21 +143,19 @@
 
 /* ---------- Main content ---------- */
 
-.outer-wrap-main {
-    min-height: 600px;
-}
-
 .region-main {
-    #desinax-vgrid.column(@columns);
+    #desinax-vgrid.column(@columns - 2);
+    #desinax-vgrid.push(1);
     margin-bottom: 24px;
     &.has-sidebar {
-        #desinax-vgrid.column(@columns * 3 / 4);
+        #desinax-vgrid.column(@columns * 3 / 4 - 2);
+        #desinax-vgrid.push(1);
     }
     &.has-sidebar-left {
         #desinax-vgrid.push(1)
     }
     &.has-sidebar-left.has-sidebar-right {
-        #desinax-vgrid.column(@columns - 12);
+        #desinax-vgrid.column(@columns - 14);
         #desinax-vgrid.push(1)
     }
 }
@@ -159,6 +165,7 @@
 .region-sidebar-left.has-sidebar-right,
 .region-sidebar-right.has-sidebar-left  {
     #desinax-vgrid.column(@columns * 1 / 4 - 1);
+    #desinax-vgrid.push(1);
 }
 
 .region-sidebar-right,
@@ -166,11 +173,31 @@
     #desinax-vgrid.push(1);
 }
 
+.inner-wrap-main,
+.inner-wrap-breadcrumb {
+    background-color: #fff;
+    box-sizing: border-box;
+    //padding: 0 24px;
+}
+
+.inner-wrap-breadcrumb {
+    position: relative;
+    z-index: 0;
+    margin-top: -180px;
+}
+
+.inner-wrap-main {
+    margin-bottom: 48px;
+    position: relative;
+    z-index: 0;
+    min-height: 600px;
+}
 
 
 /* ---------- Breadcrumb & navigation ---------- */
 .region-breadcrumb {
-    #desinax-vgrid.column(@columns);
+    #desinax-vgrid.column(@columns - 2);
+    #desinax-vgrid.push(1);
     margin-bottom: 24px;
 }
 
@@ -190,8 +217,12 @@
 .toc ul {
     margin-top: 0;
     padding-top: 0;
-    padding-left: 0.5em;
+    padding-left: 0;
     list-style-type: none;
+}
+
+.breadcrumb-list ul {
+    margin-top: 24px;
 }
 
 .breadcrumb-list li {
@@ -230,19 +261,37 @@
 /* ---------- Figure---------- */
 .figure.right {
     margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 24px;
     padding-left: 1.5em;
     box-sizing: border-box;
 }
 
+.figure.me {
+    height: 600px;
+    width: auto;
+    overflow: auto;
+}
 
 /* ---------- Flashmessage ---------- */
-.flashmessage {
-    background-color: #bdc3c7;
+.region-flash-message {
+    #desinax-vgrid.column(@columns);
+    margin-bottom: 24px;
 }
 
-.flashmessage .flashmessage-icon {
-    float: right;
+.flashmessage {
+    background-color: @pinkColor;
+    color: #fff;
+    & p {
+        padding: 24px;
+        margin-bottom: 0;
+    }
+    & .flashmessage-icon {
+        float: right;
+        padding: 24px
+    }
 }
+
 
 
 /* ---------- Byline ---------- */
@@ -254,7 +303,7 @@
     font-size: 18px;
     padding: 12px;
     color: black;
-    margin-bottom: 12px;
+    margin-bottom: 24px;
     margin-top: 0;
 }
 
@@ -276,7 +325,7 @@
 /* ---------- Footer---------- */
 .outer-wrap-footer {
     background-color: @darkColor;
-    color: white;
+    color: #fff;
 }
 
 .region-footer h3 {

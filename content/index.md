@@ -1,6 +1,13 @@
 ---
 title: "Min fina titel"
 views:
+    breadcrumb:
+        region: breadcrumb
+        template: anax/v2/breadcrumb/empty
+        data:
+            meta:
+                type: breadcrumb
+
     byline:
         region: main
         template: anax/v2/block/default
@@ -11,7 +18,7 @@ views:
                 route: block/byline
 ---
 
-[FIGURE src="image/me.jpg?w=500" class="right" caption="Bild på mig"]
+[FIGURE src="image/me.jpg?w=500" class="right me"]
 
 Min me-sida i kursen design
 =========================

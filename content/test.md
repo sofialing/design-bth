@@ -1,5 +1,11 @@
 ---
 views:
+    breadcrumb:
+        region: breadcrumb
+        template: anax/v2/breadcrumb/empty
+        data:
+            meta:
+                type: breadcrumb
     kursrepo:
         region: sidebar-left
         template: anax/v2/block/default

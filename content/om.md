@@ -1,5 +1,11 @@
 ---
 views:
+    breadcrumb:
+        region: breadcrumb
+        template: anax/v2/breadcrumb/empty
+        data:
+            meta:
+                type: breadcrumb
     kursrepo:
         region: sidebar-right
         template: anax/v2/block/default
@@ -7,7 +13,6 @@ views:
             meta:
                 type: single
                 route: block/om-kursrepo
-
     redovisa:
         region: sidebar-right
         template: anax/v2/block/default
