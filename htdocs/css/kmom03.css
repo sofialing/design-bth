@@ -5321,6 +5321,9 @@ html.hgrid .inner-wrap {
     margin-left: auto;
     max-width: 95%;
   }
+  .region-breadcrumb {
+    margin-bottom: 0;
+  }
 }
 @media screen and (max-width: 800px) {
   .region-main.has-sidebar,
@@ -5331,9 +5334,10 @@ html.hgrid .inner-wrap {
   .region-sidebar-right.has-sidebar-left {
     display: inline;
     float: left;
-    width: 98.95833333%;
+    width: 90.625%;
     margin-left: 0.52083333%;
     margin-right: 0.52083333%;
+    margin-left: 4.6875%;
   }
   .figure {
     max-width: 50%;
@@ -5356,8 +5360,29 @@ html.hgrid .inner-wrap {
   }
 }
 @media screen and (max-width: 700px) {
+  .inner-wrap {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 95%;
+  }
+  .inner-wrap-flash {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100%;
+  }
+  .inner-wrap-header {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 95%;
+  }
   .region-header-col-2 {
     display: none;
+  }
+  .region-flash {
+    height: 192px;
+  }
+  .inner-wrap-breadcrumb {
+    margin-top: 24px;
   }
   .rm-navbar-max {
     display: block;
@@ -5395,6 +5420,9 @@ html.hgrid .inner-wrap {
   .figure {
     max-width: 100%;
     margin: 0;
+  }
+  .figure.me {
+    display: none;
   }
 }
 /**
