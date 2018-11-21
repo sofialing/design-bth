@@ -1,0 +1,244 @@
+/**
+ * Design style for kmom03.
+ */
+
+/**
+ * Variables
+ */
+@darkColor: #242426;
+@blueColor: #41588A;
+@pinkColor: #72394C;
+@greenColor: #478979;
+@orangeColor: #BE895C;
+@backgroundColor: #f2efe9;
+
+/**
+ * General layout
+*/
+
+/* Hide responsive/mobile menu */
+.rm-navbar-max {
+    display: none;
+}
+
+.right {
+    float: right;
+}
+
+
+.left {
+    float: left;
+}
+
+
+/* ---------- Header ---------- */
+.outer-wrap-header {
+    background-color: #fff;
+}
+
+.site-logo-text-icon img {
+    display: none;
+}
+
+.site-logo {
+    display: none;
+}
+
+.site-logo-text  {
+    #desinax-hgrid.fontSize(@fontSizeH3);
+    & a {
+        color: @darkColor;
+        text-decoration: none;
+        margin-bottom: @magicNumber;
+    }
+}
+
+.rm-desktop ul {
+    float: right;
+}
+
+.rm-desktop li {
+    display: inline-block;
+    padding: 0 0.5em;
+    text-transform: lowercase;
+    color: @darkColor;
+    & a {
+        padding: 0 0.5em;
+        letter-spacing: 0.04em;
+    }
+    & a:hover {
+        border-bottom: 1px solid @greenColor;
+        text-decoration: none !important;
+    }
+}
+
+.rm-desktop li li {
+    background-color: #fff;
+    text-align: left;
+}
+
+/* ---------- Flash ---------- */
+.region-flash {
+    margin-bottom: 0;
+    height: 408px;
+    background-image: url("../img/kod_v2.jpg");
+    background-color: black;
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    & img {
+        display: none;
+    }
+}
+
+/* ---------- Main content ---------- */
+.inner-wrap-main,
+.inner-wrap-breadcrumb {
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.inner-wrap-breadcrumb {
+    position: relative;
+    z-index: 0;
+    margin-top: -180px;
+}
+
+.inner-wrap-main {
+    margin-bottom: @magicNumber * 2;
+    position: relative;
+    z-index: 0;
+    min-height: 600px;
+}
+
+
+/* ---------- Breadcrumb & navigation ---------- */
+.next-previous .next {
+    float: right;
+    text-align: right;
+}
+
+.breadcrumb-list ul,
+.toc ul {
+    margin-top: 0;
+    padding-top: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.breadcrumb-list ul {
+    margin-top: @magicNumber;
+}
+
+.breadcrumb-list li {
+    display: inline;
+    &::after {
+        content: "  /  ";
+        color: @greenColor;
+    }
+    &:last-child::after {
+        content: " ";
+    }
+}
+
+.breadcrumb-list a,
+.toc a,
+.next-previous a {
+    color: black;
+    text-decoration: none;
+}
+
+.toc a:hover,
+.next-previous a:hover,
+.breadcrumb-list a:hover {
+    text-decoration: underline;
+    color: @greenColor;
+}
+
+.toc h4 {
+    background-color: @greenColor;
+    color: #fff;
+    padding-left: 0.5em;
+    border-bottom: 0px;
+    margin-top: 0;
+}
+
+
+/* ---------- Figure---------- */
+.figure.right {
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: @magicNumber;
+    padding-left: 1.5em;
+    box-sizing: border-box;
+}
+
+.figure.me {
+    height: 600px;
+    width: auto;
+    overflow: auto;
+}
+
+
+/* ---------- Flashmessage ---------- */
+.flashmessage {
+    background-color: @pinkColor;
+    color: #fff;
+    & p {
+        padding: @magicNumber;
+        margin-bottom: 0;
+    }
+    & .flashmessage-icon {
+        float: right;
+        padding: @magicNumber
+    }
+}
+
+
+/* ---------- Byline ---------- */
+.author-byline {
+    background-color: @blueColor;
+    box-sizing: border-box;
+    font-size: 18px;
+    padding: 12px;
+    color: black;
+}
+
+.author-byline a {
+    color: white;
+}
+
+.author-byline p {
+    margin-bottom: 0;
+    color: #fff;
+}
+
+.author-byline img {
+    width: 120px;
+    float: left;
+    margin-right: 12px;
+}
+
+
+/* ---------- Footer---------- */
+.outer-wrap-footer {
+    background-color: @darkColor;
+    color: #fff;
+}
+
+.region-footer h3 {
+    #desinax-hgrid.fontSize(1.5em);
+    border-bottom: none;
+    margin-bottom: @magicNumber;
+}
+
+.site-footer {
+    text-align: center;
+    border-top: 1px solid #fff;
+    & p {
+        margin-bottom: @magicNumber;
+        margin-top: @magicNumber;
+    }
+
+}

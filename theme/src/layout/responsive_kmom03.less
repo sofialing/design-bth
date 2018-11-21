@@ -82,8 +82,18 @@
         }
     }
 
+    .region-footer {
+        padding-top: @magicNumber * 2;
+    }
+
     .footer-column {
-        #desinax-vgrid.column(@columns);
+        #desinax-vgrid.column(@columns - 2);
+        #desinax-vgrid.push(1);
+        margin-bottom: 0;
+        &:last-child {
+            #desinax-vgrid.column(@columns - 2);
+            #desinax-vgrid.push(1);
+        }
         & ul {
             padding-left: 0;
         }
@@ -96,6 +106,7 @@
 
     .region-footer h3 {
         border-bottom: 1px solid #fff;
+        margin-top: 0;
     }
 
     .footer-column ul {
@@ -103,6 +114,8 @@
     }
 
     .site-footer {
+        #desinax-vgrid.column(@columns - 2);
+        #desinax-vgrid.push(1);
         text-align: left;
     }
 
