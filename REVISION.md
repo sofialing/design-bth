@@ -1,6 +1,19 @@
 Revision history
 ====================
 
+
+V3.0.0 (2018-11-22)
+* Added report for kmom03 and updated submenu to show kmom03
+* Moving design related styles to design_kmom03.less
+* Updating layout for kmom03
+* Fixed minor error in vgrid.less
+* Modified typographic grid and flash-image
+* Added responsive styles for kmom03
+* Modifying vertical and typographic grid
+* Added typographic grid to kmom03
+* Added vertical grid to kmom03
+* Created new theme for kmom03
+
 V2.0.0 (2018-11-14)
 * Added report for kmom02
 * Added one more column to footer
