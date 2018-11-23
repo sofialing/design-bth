@@ -1,6 +1,8 @@
 Revision history
 ====================
 
+V3.0.1 (2018-11-23)
+* Fixed issue with overflow/vertical scrollbar in kmom03
 
 V3.0.0 (2018-11-22)
 * Added report for kmom03 and updated submenu to show kmom03
