@@ -1,0 +1,79 @@
+/*!
+ * Stylesheet for dark theme.
+ *
+ * This stylesheet is for the design course and kmom04 where we use LESS.
+ */
+
+/**
+ * Import base theme for kmom04
+ */
+@import "kmom04.less";
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:700,900');
+
+/**
+ * Theme specific settings.
+ */
+
+// Header
+@header_background: black;
+@header_link_color: #fff;
+@header_hover_border: 1px solid #F3F3F3;
+@header_hover_color: #F3F3F3;
+@logo_font: 'Playfair Display', serif;
+.rm-desktop ul { display: none; }
+
+
+// Flash image
+@flash_url: url("../img/theme/black-and-white.jpg");
+@flash_position: center center;
+
+
+// Base
+@body_color: #fff;
+@body_background: #F3F3F3;
+@inner_wrap_background: black;
+@link_color: #fff !important;
+h1 { font-family: 'Playfair Display', serif; }
+
+
+// Footer
+@footer_background: black;
+
+
+// Byline
+@byline_background: black;
+@byline_color, @byline_a_color: white;
+.author-byline {
+    border: 1px solid white;
+}
+
+
+// Breadcrumb & navigation
+@toc_header_background: black;
+@toc_header_color: #fff;
+@hover_color: #e6e6e6;
+@breadcrumb_divider: #e6e6e6;
+.toc h4 { border-bottom: 1px solid #e6e6e6; padding-left: 0; }
+
+
+// Flashmessage
+@flash_message_background: black;
+@flash_message_color: #fff;
+
+
+// header h1-h6 borders
+@colorH3BorderBottom: #e6e6e6;
+@colorH4BorderBottom: #e6e6e6;
+@colorH5BorderBottom: #e6e6e6;
+@colorH6BorderBottom: #e6e6e6;
+
+// Menu layout for the mobile variant
+@maxBgColor: black;
+@mobileBgColor: black;
+@maxButtonSubmenuBgColor: black;
+@maxButtonColor: #fff;
+.rm-default ul li { box-shadow: none; }
+
+
+// other
+code { background-color: #333; }
