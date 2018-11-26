@@ -1,0 +1,78 @@
+/*!
+ * Stylesheet for minimalistic theme.
+ *
+ * This stylesheet is for the design course and kmom04 where we use LESS.
+ */
+
+/**
+ * Import base theme for kmom04
+ */
+@import "kmom04.less";
+
+
+/**
+ * Theme specific settings.
+ */
+
+
+// Base
+@body_background: #fff;
+@body_color: #333;
+@link_color: #666   ;
+
+
+// Header
+@header_background: #fff;
+@header_link_color: #333;
+@header_hover_border: 1px solid #ccc;
+.rm-desktop ul { display: none; }
+
+
+// Flash image
+@flash_url: url("../img/theme/minimal.jpg");
+@flash_position: center center;
+
+
+// Byline
+@byline_background: #f3f1ef;
+@byline_color: #333;
+@byline_a_color: #333;
+
+
+// Breadcrumb & navigation
+@toc_header_background: #fff;
+@toc_header_color: #333;
+@hover_color: #22313f;
+@breadcrumb_divider: #22313f;
+.toc h4 { border-bottom: 1px solid #ccc; padding-left: 0; }
+
+// Flashmessage
+@flash_message_background: #f3f1ef;
+@flash_message_color: #333;
+
+// Footer
+@footer_background: #f3f1ef;
+@footer_color: #333;
+
+.region-footer ul {
+    list-style-type: none;
+    padding-left: 0;
+    & a {
+        text-decoration: none;
+    }
+    & a:hover {
+        text-decoration: underline;
+    }
+}
+
+.region-footer h3 { color: #333; }
+
+
+// Menu layout for the mobile variant
+@maxBgColor: #f3f1ef;
+@mobileBgColor: #f3f1ef;
+@maxButtonSubmenuBgColor: #f3f1ef;
+@maxButtonColor: #333;
+@maxButtonClickedColor: #333;
+@mobileColor: #333;
+.rm-default ul li { box-shadow: none; }
