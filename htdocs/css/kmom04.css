@@ -1,7 +1,7 @@
 /*!
- * Stylesheet for design kmom03.
+ * Default stylesheet for design kmom04.
  *
- * This stylesheet is for the design course and kmom02 where we use LESS.
+ * This stylesheet is for the design course and kmom04 where we use LESS.
  */
 /**
  * Normalize and reset the style.
@@ -4444,7 +4444,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 .rm-mobile {
   width: 100%;
   box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.4);
-  background-color: #478979;
+  background-color: #444;
   color: #fff;
 }
 .rm-mobile a {
@@ -4502,7 +4502,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   height: 500px;
   overflow-y: auto;
   padding-top: 72px;
-  background-color: #478979;
+  background-color: #131313;
   /* Color when menu item is clicked */
   /* Button for submenu */
   /* Style for submenu */
@@ -5485,6 +5485,92 @@ html.hgrid .inner-wrap {
   background-color: #b5dce1;
   border: 1px solid #6cbac4;
   color: #111;
+}
+/**
+ * Default style for kmom04.
+ */
+/**
+ * Variables
+ */
+/**
+ * General layout
+*/
+body {
+  background-color: #f2efe9;
+  color: #333;
+  font-family: futura-pt, sans-serif;
+}
+body a {
+  color: #478979;
+}
+/* ---------- Header ---------- */
+.outer-wrap-header {
+  background-color: #fff;
+  color: #242426;
+}
+.site-logo-text a {
+  color: #242426;
+  font-family: futura-pt, sans-serif;
+}
+.rm-desktop li a {
+  color: #242426;
+}
+.rm-desktop li a:hover {
+  color: #333;
+  border-bottom: 1px solid #478979;
+}
+/* ---------- Flash ---------- */
+.region-flash {
+  background-image: url("../img/kod_v2.jpg");
+  background-position: bottom center;
+}
+/* ---------- Main content ---------- */
+.inner-wrap-main,
+.inner-wrap-breadcrumb {
+  background-color: #fff;
+}
+.inner-wrap-breadcrumb {
+  position: relative;
+  z-index: 0;
+}
+/* ---------- Breadcrumb & navigation ---------- */
+.toc h4 {
+  background-color: #478979;
+  color: #fff;
+}
+.toc a:hover,
+.next-previous a:hover,
+.breadcrumb-list a:hover {
+  color: #478979;
+}
+.breadcrumb-list li::after {
+  content: " / ";
+  color: #478979;
+}
+/* ---------- Flashmessage ---------- */
+.flashmessage {
+  background-color: #72394C;
+  color: #fff;
+}
+/* ---------- Byline ---------- */
+.author-byline {
+  background-color: #41588A;
+}
+.author-byline p {
+  color: #fff;
+}
+.author-byline a {
+  color: #fff;
+}
+/* ---------- Footer---------- */
+.outer-wrap-footer {
+  background-color: #242426;
+}
+.outer-wrap-footer p {
+  color: #fff;
+}
+.site-footer {
+  border-top: 1px solid #fff;
 }
 /**
  * My own settings, not currently in their own module.

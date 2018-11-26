@@ -1,0 +1,137 @@
+/**
+ * Default style for kmom04.
+ */
+
+/**
+ * Variables
+ */
+@body_background: #f2efe9;
+@body_color: #333;
+@link_color: @greenColor;
+@header_background: #fff;
+@header_font_color: @darkColor;
+@header_link_color: @darkColor;
+@logo_font: @defaultFont;
+@flash_url: url("../img/kod_v2.jpg");
+@flash_position: bottom center;
+@inner_wrap_background: #fff;
+@toc_header_background: @greenColor;
+@toc_header_color: #fff;
+@flash_message_background: @pinkColor;
+@flash_message_color: #fff;
+@byline_background: @blueColor;
+@byline_color: #fff;
+@byline_a_color: #fff;
+@footer_background: @darkColor;
+@footer_color: #fff;
+@site_footer_border: 1px solid #fff;
+@header_hover_border: 1px solid @greenColor;
+@header_hover_color: #333;
+@hover_color: @greenColor;
+@breadcrumb_divider: @greenColor;
+
+/**
+ * General layout
+*/
+
+body {
+    background-color: @body_background;
+    color: @body_color;
+    font-family: @fontFamilyBody;
+    & a {
+        color: @link_color;
+    }
+}
+
+
+/* ---------- Header ---------- */
+.outer-wrap-header {
+    background-color: @header_background;
+    color: @header_font_color;
+}
+
+.site-logo-text a {
+    color: @header_link_color;
+    font-family: @logo_font;
+}
+
+.rm-desktop li a {
+    color: @header_link_color;
+    &:hover {
+        color: @header_hover_color;
+        border-bottom: @header_hover_border;
+    }
+}
+
+
+/* ---------- Flash ---------- */
+.region-flash {
+    background-image: @flash_url;
+    background-position: @flash_position;
+    //height: 505px;
+}
+
+
+/* ---------- Main content ---------- */
+.inner-wrap-main,
+.inner-wrap-breadcrumb {
+    background-color: @inner_wrap_background;
+}
+
+.inner-wrap-breadcrumb {
+    position: relative;
+    z-index: 0;
+    //margin-top: -288px;
+}
+
+
+/* ---------- Breadcrumb & navigation ---------- */
+.toc h4 {
+    background-color: @toc_header_background;
+    color: @toc_header_color;
+}
+
+.toc a:hover,
+.next-previous a:hover,
+.breadcrumb-list a:hover {
+    color: @hover_color;
+}
+
+.breadcrumb-list li {
+    &::after {
+        content: " / ";
+        color: @breadcrumb_divider;
+    }
+}
+
+
+/* ---------- Flashmessage ---------- */
+.flashmessage {
+    background-color: @flash_message_background;
+    color: @flash_message_color;
+}
+
+
+/* ---------- Byline ---------- */
+.author-byline {
+    background-color: @byline_background;
+    & p {
+        color: @byline_color;
+    }
+    & a {
+        color: @byline_a_color;
+    }
+}
+
+
+/* ---------- Footer---------- */
+.outer-wrap-footer {
+    background-color: @footer_background;
+    & p {
+        color: @footer_color;
+    }
+}
+
+.site-footer {
+    border-top: @site_footer_border;
+}
