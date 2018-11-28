@@ -11,6 +11,7 @@ Urval
 
 Jag har valt att analysera tre olika webbplatser inom samma kategori, kläder och inredning, som jag själv besöker ofta. De som jag har valt är: _H&M_, _Åhlens_ och _Ellos_.
 
+
 Metod
 -----------------------
 
@@ -19,6 +20,9 @@ För att kunna genomföra färganalysen använde jag mig av DevTools i Chrome f�
 
 H&M
 -----------------------
+<a href="img/analysis/hm_1200.png"><img src="img/analysis/hm_screen.png"></a>
+Klicka på bilden för att se hela webbsidan.
+
 <table style="border-spacing: 4px; border-collapse: separate">
 <tr>
 <td style="height: 50px; width: 50px; border: 1px solid black; background-color: #fff">
@@ -37,6 +41,9 @@ På webbplatsen används två egna typsnitt: HM Ampersand och HM Amperserif. HM 
 
 Åhléns
 -----------------------
+<a href="img/analysis/ahlens_1200.png"><img src="img/analysis/ahlens_screen.png"></a>
+Klicka på bilden för att se hela webbsidan.
+
 <table style="border-spacing: 4px; border-collapse: separate">
 <tr>
 <td style="height: 50px; width: 50px; border: 1px solid black; background-color: #fff">
@@ -56,6 +63,8 @@ På webbplatsen används tre typsnitt; Apercu, Apercu Mono och Noe Display. Frä
 
 Ellos
 -----------------------
+<a href="img/analysis/ellos_1200.png"><img src="img/analysis/ellos_screen.png"></a>
+Klicka på bilden för att se hela webbsidan.
 <table style="border-spacing: 4px; border-collapse: separate">
 <tr>
 <td style="height: 50px; width: 50px; border: 1px solid black; background-color: #fff">
