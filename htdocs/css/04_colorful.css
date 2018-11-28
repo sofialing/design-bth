@@ -4564,7 +4564,7 @@ html {
   background-color: #f2efe9;
 }
 body {
-  font: 18px/1.33333333 futura-pt, sans-serif;
+  font: 16px/1.5 futura-pt, sans-serif;
 }
 .outer-wrap-main {
   min-height: 600px;
@@ -4575,7 +4575,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: futura-pt, sans-serif;
+  font-family: 'Patua One', cursive;
   margin-top: 24px;
   margin-bottom: 24px;
 }
@@ -4589,7 +4589,7 @@ h6 img {
 }
 h1 {
   font-size: 2.375em;
-  line-height: 1.12280702;
+  line-height: 1.26315789;
   font-weight: normal;
   border-bottom: 0 solid #666;
   margin-bottom: 24px;
@@ -4607,7 +4607,7 @@ h1 + h2 {
 }
 h2 {
   font-size: 1.875em;
-  line-height: 1.42222222;
+  line-height: 1.6;
   font-weight: normal;
   margin-bottom: 23px;
   border-bottom: 1px solid #CCC;
@@ -4617,7 +4617,7 @@ h2 + h3 {
 }
 h3 {
   font-size: 1.75em;
-  line-height: 1.52380952;
+  line-height: 1.71428571;
   font-weight: normal;
   margin-bottom: 23px;
   border-bottom: 1px solid #0155C0;
@@ -4627,7 +4627,7 @@ h3 + h4 {
 }
 h4 {
   font-size: 1.5em;
-  line-height: 1.77777778;
+  line-height: 1;
   font-weight: normal;
   margin-bottom: 23px;
   border-bottom: 1px solid #0155C0;
@@ -4637,7 +4637,7 @@ h4 + h5 {
 }
 h5 {
   font-size: 1.25em;
-  line-height: 1.06666667;
+  line-height: 1.2;
   margin-bottom: 23px;
   border-bottom: 1px solid #0155C0;
 }
@@ -4646,7 +4646,7 @@ h5 + h6 {
 }
 h6 {
   font-size: 1.25em;
-  line-height: 1.06666667;
+  line-height: 1.2;
   margin-bottom: 23px;
   border-bottom: 1px solid #0155C0;
 }
@@ -4699,7 +4699,7 @@ code,
 kbd,
 samp,
 .code {
-  font-family: futura-pt, sans-serif;
+  font-family: 'Fira Sans Condensed', sans-serif;
 }
 code,
 samp {
@@ -4796,7 +4796,7 @@ article table caption,
 .table caption,
 .table2 caption {
   font-size: 0.875em;
-  line-height: 1.52380952;
+  line-height: 1.71428571;
   text-align: left;
   font-style: italic;
 }
@@ -5088,7 +5088,7 @@ html.hgrid .inner-wrap {
 .next-previous,
 .breadcrumb-list {
   font-size: 0.875em;
-  line-height: 1.52380952;
+  line-height: 1.71428571;
 }
 /* ---------- Flashmessage ---------- */
 .region-flash-message {
@@ -5170,7 +5170,7 @@ html.hgrid .inner-wrap {
 }
 .site-logo-text {
   font-size: 1.75em;
-  line-height: 1.52380952;
+  line-height: 1.71428571;
 }
 .site-logo-text a {
   color: #242426;
@@ -5325,7 +5325,7 @@ html.hgrid .inner-wrap {
 }
 .region-footer h3 {
   font-size: 1.5em;
-  line-height: 1.77777778;
+  line-height: 1;
   border-bottom: none;
   margin-bottom: 24px;
 }
@@ -5506,7 +5506,7 @@ html.hgrid .inner-wrap {
 body {
   background-color: hsla(209, 98%, 41%, 0.18);
   color: #333;
-  font-family: futura-pt, sans-serif;
+  font-family: 'Fira Sans Condensed', sans-serif;
 }
 body a {
   color: #F15923;
@@ -5518,7 +5518,7 @@ body a {
 }
 .site-logo-text a {
   color: #fff;
-  font-family: futura-pt, sans-serif;
+  font-family: 'Patua One', cursive;
 }
 .rm-desktop li a {
   color: #fff;
@@ -5583,9 +5583,36 @@ body a {
 /**
  * My own settings, not currently in their own module.
  */
+@font-face {
+  font-family: 'Patua One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Patua One'), local('PatuaOne-Regular'), url(https://fonts.gstatic.com/s/patuaone/v8/ZXuke1cDvLCKLDcimxB44_lr.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Fira Sans Condensed';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Fira Sans Condensed Italic'), local('FiraSansCondensed-Italic'), url(https://fonts.gstatic.com/s/firasanscondensed/v2/wEOjEADFm8hSaQTFG18FErVhsC9x-tarUfPdr-NU.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Fira Sans Condensed';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Fira Sans Condensed Regular'), local('FiraSansCondensed-Regular'), url(https://fonts.gstatic.com/s/firasanscondensed/v2/wEOhEADFm8hSaQTFG18FErVhsC9x-tarUfbtqA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Fira Sans Condensed';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Fira Sans Condensed Bold'), local('FiraSansCondensed-Bold'), url(https://fonts.gstatic.com/s/firasanscondensed/v2/wEOsEADFm8hSaQTFG18FErVhsC9x-tarWU3IuMR0dw.ttf) format('truetype');
+}
 /**
  * Theme specific settings.
  */
+.rm-desktop a {
+  font-family: 'Patua One', cursive;
+}
 .rm-desktop ul {
   display: none;
 }
