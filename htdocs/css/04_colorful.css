@@ -5504,7 +5504,7 @@ html.hgrid .inner-wrap {
  * General layout
 */
 body {
-  background-color: #026ED1;
+  background-color: hsla(209, 98%, 41%, 0.18);
   color: #333;
   font-family: futura-pt, sans-serif;
 }
@@ -5543,7 +5543,7 @@ body a {
 }
 /* ---------- Breadcrumb & navigation ---------- */
 .toc h4 {
-  background-color: #026ED1;
+  background-color: #0155C0;
   color: #fff;
 }
 .toc a:hover,
@@ -5562,7 +5562,7 @@ body a {
 }
 /* ---------- Byline ---------- */
 .author-byline {
-  background-color: #026ED1;
+  background-color: #0155C0;
 }
 .author-byline p {
   color: #fff;
