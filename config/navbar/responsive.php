@@ -46,9 +46,9 @@ return [
             "submenu" => [
                 "items" => [
                     [
-                        "text" => "Färganalys",
+                        "text" => "Färgschema",
                         "url" => "rapport/fargschema",
-                        "title" => "Färganalys.",
+                        "title" => "Färgschema.",
                     ],
                 ],
             ],
