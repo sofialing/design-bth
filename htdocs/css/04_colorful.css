@@ -5197,6 +5197,7 @@ html.hgrid .inner-wrap {
 .rm-desktop li li {
   background-color: #fff;
   text-align: left;
+  padding: 0.5em;
 }
 /* ---------- Flash ---------- */
 .region-flash {
@@ -5583,6 +5584,9 @@ body a {
 /**
  * My own settings, not currently in their own module.
  */
+.rm-default ul li {
+  box-shadow: none;
+}
 @font-face {
   font-family: 'Patua One';
   font-style: normal;

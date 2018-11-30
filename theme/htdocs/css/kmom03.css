@@ -5189,6 +5189,7 @@ html.hgrid .inner-wrap {
 .rm-desktop li li {
   background-color: #fff;
   text-align: left;
+  padding: 0.5em;
 }
 /* ---------- Flash ---------- */
 .region-flash {

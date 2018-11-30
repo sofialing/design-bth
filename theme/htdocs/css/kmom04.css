@@ -4444,7 +4444,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 .rm-mobile {
   width: 100%;
   box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.4);
-  background-color: #444;
+  background-color: #72394C;
   color: #fff;
 }
 .rm-mobile a {
@@ -4502,7 +4502,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   height: 500px;
   overflow-y: auto;
   padding-top: 72px;
-  background-color: #131313;
+  background-color: #72394C;
   /* Color when menu item is clicked */
   /* Button for submenu */
   /* Style for submenu */
@@ -4519,7 +4519,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 .rm-max .rm-mobile .rm-submenu-button {
   float: right;
   box-shadow: 0px 0px 1px rgba(255, 255, 255, 0.4);
-  background-color: #478979;
+  background-color: #72394C;
   padding: 8px 24px;
   margin-right: 8px;
   margin-top: 10px;
@@ -5189,6 +5189,7 @@ html.hgrid .inner-wrap {
 .rm-desktop li li {
   background-color: #fff;
   text-align: left;
+  padding: 0.5em;
 }
 /* ---------- Flash ---------- */
 .region-flash {
@@ -5575,3 +5576,6 @@ body a {
 /**
  * My own settings, not currently in their own module.
  */
+.rm-default ul li {
+  box-shadow: none;
+}
