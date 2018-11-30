@@ -1,6 +1,19 @@
 Revision history
 ====================
 
+V4.0.0 (2018-11-30)
+* Changed default stylesheet to kmom04
+* Added report for kmom04
+* Updated navbar and responsive menu
+* Added screenshots to color scheme analysis
+* Changed font used in colorful and dark theme
+* Added color scheme analysis
+* Added colorful theme
+* Added dark theme
+* Added minimalistic theme
+* Added base theme for kmom04
+* Added page for analysis
+
 V3.0.1 (2018-11-23)
 * Fixed issue with overflow/vertical scrollbar in kmom03
 
