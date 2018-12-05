@@ -4699,7 +4699,7 @@ code,
 kbd,
 samp,
 .code {
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: monospace;
 }
 code,
 samp {

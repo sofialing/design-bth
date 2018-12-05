@@ -4699,7 +4699,7 @@ code,
 kbd,
 samp,
 .code {
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: monospace;
 }
 code,
 samp {
@@ -5584,6 +5584,9 @@ body a {
 /**
  * My own settings, not currently in their own module.
  */
+.rm-default ul li {
+  box-shadow: none;
+}
 @font-face {
   font-family: 'Playfair Display';
   font-style: normal;

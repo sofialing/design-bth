@@ -4691,7 +4691,7 @@ code,
 kbd,
 samp,
 .code {
-  font-family: futura-pt, sans-serif;
+  font-family: monospace;
 }
 code,
 samp {
