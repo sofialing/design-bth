@@ -82,10 +82,5 @@ return [
             "url" => "blogg",
             "title" => "Om denna webbplats.",
         ],
-        [
-            "text" => "Test",
-            "url" => "test",
-            "title" => "Test av olika konstruktioner av Markdown.",
-        ],
     ],
 ];

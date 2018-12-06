@@ -59,29 +59,7 @@ html.hgrid .inner-wrap {
 @import "@desinax/vertical-grid/less/grid.less";
 @import "layout/vgrid.less";
 
-/**
- * Figure and figcaption for images and other media using figure/figcaption
- */
-@import "@desinax/figure/less/asciinema.less";
-@import "@desinax/figure/less/codepen.less";
-@import "@desinax/figure/less/figure.less";
 
-
-// Enable style from the module and optinally add customized layout
-figure.figure {
-    #desinax-figure.figure();
-}
-
-figure.asciinema {
-    &:extend(figure.figure);
-    #desinax-figure.asciinema();
-}
-
-figure.codepen,
-figure.figure-codepen {
-    &:extend(figure.figure);
-    #desinax-figure.codepen();
-}
 
 /**
  * Layout style for general structure of header, navbar, main, footer
@@ -91,6 +69,7 @@ figure.figure-codepen {
 @import "layout/responsive_kmom03.less";
 @import "layout/regions.less";
 @import "layout/design_kmom04.less";
+@import "layout/blogg.less";
 
 
 /**

@@ -79,9 +79,9 @@ return [
             "title" => "Verktyg och möjligheter för utveckling.",
         ],
         [
-            "text" => "Test",
-            "url" => "test",
-            "title" => "Test av olika konstruktioner av Markdown.",
+            "text" => "Blogg",
+            "url" => "blogg",
+            "title" => "Om denna webbplats.",
         ],
     ],
 ];

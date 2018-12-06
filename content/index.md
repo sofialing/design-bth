@@ -18,7 +18,7 @@ views:
                 route: block/byline
 ---
 
-[FIGURE src="image/me.jpg?w=500" class="right me"]
+[FIGURE src="image/me.jpg?w=500" class="right w100"]
 
 Min me-sida i kursen design
 =========================

@@ -31,7 +31,7 @@ views:
                 view: blog-list
 
 ---
-Dagens bild
+Dagens djurbild
 ===========================
 
-Kortare blogginlägg om vad som händer på dbwebb.se, kurserna samt webbprogrammering och webbutveckling med HTML, CSS, JavaScript, PHP och SQL i allmänhet.
+Välkommen till min bildblogg! Som den djurälskare jag är så kommer jag här att lägga ut en djurbild om dagen, både på mina två små monsterkatter och andra mer eller mindre vilda djur.
