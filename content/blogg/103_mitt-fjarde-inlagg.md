@@ -13,19 +13,19 @@ Elsa
 
 <!--more-->
 
-
+Bild på min ena katt Elsa som jag tog för att testa min nya kamera.
 
 Bilden ur olika aspekter {#bilder}
 -----------------------------------
 [FIGURE src="image/blogg/elsa_2.jpg?&w=800&convolve=sharpen-alt" caption="Bilden i sin helhet"]
 [FIGURE src="image/blogg/elsa_2.jpg?&w=800&f=grayscale&convolve=sharpen-alt" caption="Bilden i sin helhet, fast i svartvit"]
-[FIGURE src="image/blogg/elsa_2.jpg?w=800&crop=1375,1000,center,center&h=450&cf&convolve=sharpen-alt" caption="Närbild"]
+[FIGURE src="image/blogg/elsa_2.jpg?w=800&crop=4500,5000,center,center&h=450&cf&convolve=sharpen-alt" caption="Närbild"]
 
 
 
 Kameradetaljer {#detaljer}
 -----------------------------------
-[FIGURE src="image/blogg/elsa_2.jpg?w=800&crop=4500,5000,center,center&h=450&cf&convolve=sharpen-alt" class="right w50"]
+[FIGURE src="image/blogg/elsa_2.jpg?w=350&h=240&crop-to-fit&shapen" class="right w50"]
 
 Bilden är tagen 29 december 2017 med en Nikon D5300.
 
