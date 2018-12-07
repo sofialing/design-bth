@@ -16,15 +16,12 @@ Geten från Wämöparken
 Det här är en av de getter som finns i den lilla djurparken i Wämöparken i Karlskrona. Getter är ett av mina favoritdjur, så Wämöparkens lilla djurpark var ett välbesökt utflyktsmål för mig och min sambo när vi bodde i Karlskrona. Den här bilden är tagen en varm och solig sommardag och det är min favoritbild från den dagen, jag tycker om hur nyfiken geten ser ut när den kikar fram ur den gamla trädstammen.
 
 
-
 Bilden ur olika aspekter {#bilder}
 -----------------------------------
 [FIGURE src="image/blogg/get.jpg?&w=800" caption="Bilden i sin helhet"]
 [FIGURE src="image/blogg/get.jpg?&w=800&f=grayscale&sharpen" caption="Bilden i sin helhet, fast i svartvit"]
 [FIGURE src="image/blogg/get.jpg?w=800&&crop=1200,1075,left,bottom&h=450&cf" caption="Närbild"]
 
-
-<!-- [FIGURE src="image/blogg/get.jpg?&h=500&crop-to-fit&area=0,30,0,0&aspect-ratio=!16:10&sharpen" class="right w33"] -->
 
 
 Kameradetaljer {#detaljer}

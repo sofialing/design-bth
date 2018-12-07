@@ -23,10 +23,8 @@ Bilden ur olika aspekter {#bilder}
 
 
 
-
 Kameradetaljer {#detaljer}
 -----------------------------------
-<!-- [FIGURE src="image/blogg/elsa.jpg?&h=500&crop-to-fit&area=0,0,0,15&aspect-ratio=!16:10&sharpen" class="right w33"] -->
 [FIGURE src="image/blogg/elsa.jpg?w=350&h=240&crop-to-fit&area=5,10,5,15" class="right w50"]
 
 Bilden är tagen 12 oktober 2013 med en Nikon D80 med objektivet Nikon AF-S 50 mm/1,8.
