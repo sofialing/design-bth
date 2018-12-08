@@ -1,6 +1,16 @@
 Revision history
 ====================
 
+V5.0.0 (2018-12-08)
+* Changed default stylesheet to kmom05
+* Added report for kmom05
+* Updated blog posts and added one more
+* Added less module for blog page
+* Added style for blog page
+* Added content to blog post
+* Added load time analysis for kmom05
+* Updating me/redovisa for kmom05
+
 V4.0.0 (2018-11-30)
 * Changed default stylesheet to kmom04
 * Added report for kmom04
