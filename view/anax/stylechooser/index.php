@@ -8,7 +8,7 @@ namespace Anax\View;
 
 // Show incoming variables and view helper functions
 //echo showEnvironment(get_defined_vars(), get_defined_functions());
-?><h1>Stylechooser</h1>
+?> <div class="region-stylechooser"><h1>Stylechooser</h1>
 <p>Here you can select among the available styles and activate them.</p>
 <form class="stylechooser" method="post" action="<?= url("style/update") ?>">
     <fieldset>
@@ -44,3 +44,5 @@ namespace Anax\View;
         <?php endif; ?>
     </fieldset>
 </form>
+
+</div>

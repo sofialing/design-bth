@@ -21,6 +21,21 @@ views:
             meta:
                 type: single
                 route: block/om-redovisa
+    start-image:
+        region: after-main
+        template: anax/v2/block/default
+        sort: 3
+        data:
+            meta:
+                type: single
+                route: block/start-image
+    flash-text:
+        region: flash
+        template: anax/v2/block/default
+        data:
+            meta:
+                type: single
+                route: block/flash-text
 ---
 Test med olika konstruktioner av Markdown
 =========================

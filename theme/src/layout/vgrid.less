@@ -12,7 +12,6 @@
  */
 .row {
     #desinax-vgrid.row();
-    margin-bottom: 0;
 }
 
 .inner-wrap {
@@ -72,6 +71,11 @@
     width: 100%;
 }
 
+.flash-text {
+    #desinax-vgrid.column(@columns - 6);
+    #desinax-vgrid.push(3);
+}
+
 
 /* ---------- Main content ---------- */
 .region-main {
@@ -102,6 +106,10 @@
 .region-sidebar-right,
 .region-sidebar-right.has-sidebar-left {
     #desinax-vgrid.push(1);
+}
+
+.inner-wrap-main {
+    padding-bottom: @magicNumber;
 }
 
 
@@ -147,4 +155,11 @@
 
 .site-footer {
     #desinax-vgrid.column(@columns);
+}
+
+
+/* ---------- test---------- */
+.col3 {
+    #desinax-vgrid.column(@columns / 3);
+    margin-bottom: @magicNumber;
 }

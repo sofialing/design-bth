@@ -1,0 +1,356 @@
+/**
+ * Design style for kmom03.
+ */
+
+/**
+ * Variables
+ */
+@whiteColor: #fff;
+@lightColor: #f3f1ef; //#FAFAF8;
+@lightBlueColor: #93C1D7;
+@blueColor: #56768F;
+@darkBlueColor: #3C3B40;
+@darkColor: #0C0B0E;
+
+/**
+ * General layout
+*/
+
+/* Hide responsive/mobile menu */
+.rm-navbar-max {
+    display: none;
+}
+
+body {
+    background-color: @lightColor;
+    color: @darkColor;
+    #desinax-hgrid.font(@fontSizeBody, @fontFamily: @defaultFont);
+    & a {
+        color: @blueColor;
+    }
+    & a:hover {
+        text-decoration: none;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* ---------- Header ---------- */
+.outer-wrap-header {
+    background-color: @whiteColor;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    box-shadow: 0 0 25px 0px rgba(0, 0, 0, 0.2);
+}
+
+.site-logo-text-icon img {
+    display: none;
+}
+
+.site-logo {
+    display: none;
+}
+
+.site-logo-text  {
+    #desinax-hgrid.fontSize(@fontSizeH3);
+    & a {
+        color: @darkColor;
+        text-decoration: none;
+        margin-bottom: @magicNumber;
+    }
+}
+
+.rm-desktop ul {
+    background-color: @whiteColor;
+    float: right;
+    padding-top: @magicNumber / 2;
+}
+
+.rm-desktop li {
+    display: inline-block;
+    padding: 0 0.5em;
+    text-transform: lowercase;
+    color: @darkColor;
+    & a {
+        padding: 0.5em;
+        letter-spacing: 0.04em;
+    }
+    & a:hover {
+        text-decoration: none !important;
+    }
+}
+
+.rm-desktop li li {
+    background-color: @whiteColor;
+    text-align: left;
+    padding: (@magicNumber / 2) 1em;
+}
+
+
+/* ---------- Flash ---------- */
+.region-flash {
+    margin-bottom: 0;
+    height: 600px;
+    background-image: url("../image/theme/flash_kmom06_2.jpg?w=1600");
+    background-color: black;
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 75%);
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 75%);
+    & img {
+        display: none;
+    }
+}
+
+
+/* ---------- Main content ---------- */
+.inner-wrap-main,
+.inner-wrap-breadcrumb {
+    background-color: @whiteColor;
+    box-sizing: border-box;
+}
+
+.inner-wrap-breadcrumb {
+    position: relative;
+    z-index: 0;
+    margin-top: -240px;
+}
+
+.inner-wrap-main {
+    margin-bottom: @magicNumber * 2;
+    position: relative;
+    z-index: 0;
+    min-height: 600px;
+}
+
+.info-boxes {
+    background-color: @whiteColor;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    & h4 {
+        background-color: @blueColor;
+        color: @whiteColor;
+        padding: (@magicNumber / 4) @magicNumber;
+        border-bottom: 0px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    & p {
+        padding: 0 @magicNumber;
+    }
+}
+
+
+/* ---------- Breadcrumb & navigation ---------- */
+.next-previous .next {
+    float: right;
+    text-align: right;
+}
+
+.breadcrumb-list ul,
+.toc ul {
+    margin-top: 0;
+    padding-top: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.breadcrumb-list ul {
+    margin-top: @magicNumber;
+}
+
+.breadcrumb-list li {
+    display: inline;
+    &::after {
+        content: "  /  ";
+        color: @blueColor;
+    }
+    &:last-child::after {
+        content: " ";
+    }
+}
+
+.breadcrumb-list a,
+.toc a,
+.next-previous a {
+    color: @darkColor;
+    text-decoration: none;
+}
+
+.toc a:hover,
+.next-previous a:hover,
+.breadcrumb-list a:hover {
+    text-decoration: underline;
+    color: @blueColor;
+}
+
+.toc h4 {
+    background-color: @blueColor;
+    color: #fff;
+    padding-left: 0.5em;
+    border-bottom: 0px;
+    margin-top: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+/* ---------- Flashmessage ---------- */
+.flashmessage {
+    background-color: @darkBlueColor;
+    color: @whiteColor;
+    & p {
+        padding: @magicNumber;
+        margin-bottom: 0;
+    }
+    & .flashmessage-icon {
+        float: right;
+        padding: @magicNumber
+    }
+}
+
+.region-flash-message {
+    margin-top: 72 + @magicNumber;
+}
+
+
+/* ---------- Byline ---------- */
+.author-byline {
+    background-color: @lightColor;
+    padding: @magicNumber @magicNumber 0px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    & p {
+        color: @darkColor;
+        margin-top: 0;
+    }
+    & a {
+        color: @darkColor;
+    }
+    & img {
+        width: @magicNumber * 5;
+        border-radius: 50%;
+        float: left;
+        margin-right: @magicNumber;
+        margin-bottom: @magicNumber;
+    }
+}
+
+
+/* ---------- Footer---------- */
+.outer-wrap-footer {
+    background-color: @darkColor;
+    color: @whiteColor;
+}
+
+.region-footer h3 {
+    #desinax-hgrid.fontSize(1.5em);
+    // border-bottom: none;
+    margin-bottom: @magicNumber;
+}
+
+.site-footer {
+    text-align: center;
+    // border-top: 1px solid #fff;
+    & p {
+        margin-bottom: @magicNumber;
+        margin-top: @magicNumber;
+    }
+}
+
+.region-footer ul {
+    list-style-type: none;
+    padding-left: 0;
+    & a {
+        text-decoration: none;
+        color: @whiteColor;
+    }
+    & a:hover {
+        text-decoration: underline;
+        padding-left: @magicNumber / 2;
+    }
+}
+
+
+/* ---------- Stylechooser---------- */
+.region-stylechooser {
+    margin-top: 72px;
+    padding-top: @magicNumber * 2;
+    padding-bottom: @magicNumber;
+}
+
+.stylechooser {
+    max-width: 100%;
+    & fieldset {
+        max-width: 100%;
+    }
+    & select {
+        width: 100%;
+        max-width: 90%;
+    }
+}
+
+
+/* ---------- Hoover effect---------- */
+.hover-effect li a:hover {
+    color: @blueColor;
+}
+
+.hover-effect a::before {
+	color: @lightBlueColor;
+	text-shadow: 0 0 1px rgba(255,255,255,0.3);
+	content: attr(data-hover);
+	position: absolute;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.3s;
+	transition: transform 0.3s, opacity 0.3s;
+	pointer-events: none;
+}
+
+.hover-effect a::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 1px;
+	background: @lightBlueColor;
+	opacity: 0;
+	-webkit-transform: translateY(5px);
+	-moz-transform: translateY(5px);
+	transform: translateY(5px);
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.3s;
+	transition: transform 0.3s, opacity 0.3s;
+	pointer-events: none;
+}
+
+.hover-effect a:hover::before,
+.hover-effect a:focus::before {
+	opacity: 0;
+	-webkit-transform: translateY(-2px);
+	-moz-transform: translateY(-2px);
+	transform: translateY(-2px);
+}
+
+.hover-effect a:hover::after,
+.hover-effect a:focus::after {
+	opacity: 1;
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+	transform: translateY(0px);
+}
+
+::selection {
+  background: @lightBlueColor; /* WebKit/Blink Browsers */
+}
+
+::-moz-selection {
+  background: @lightBlueColor; /* Gecko Browsers */
+}

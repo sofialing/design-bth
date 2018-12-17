@@ -4560,6 +4560,9 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 /**
  * Base style to affect HTML elements on a general scale.
  */
+/**
+ * Variables
+ */
 html {
   background-color: #f2efe9;
 }
@@ -4947,7 +4950,6 @@ html.hgrid .inner-wrap {
   width: 101.04166667%;
   margin-left: -0.52083333%;
   margin-right: -0.52083333%;
-  margin-bottom: 0;
 }
 .row::after {
   content: "";
@@ -5031,6 +5033,14 @@ html.hgrid .inner-wrap {
   margin: 0;
   width: 100%;
 }
+.flash-text {
+  display: inline;
+  float: left;
+  width: 73.95833333%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+  margin-left: 13.02083333%;
+}
 /* ---------- Main content ---------- */
 .region-main {
   display: inline;
@@ -5074,6 +5084,9 @@ html.hgrid .inner-wrap {
 .region-sidebar-right,
 .region-sidebar-right.has-sidebar-left {
   margin-left: 4.6875%;
+}
+.inner-wrap-main {
+  padding-bottom: 24px;
 }
 /* ---------- Breadcrumb & navigation ---------- */
 .region-breadcrumb {
@@ -5134,6 +5147,15 @@ html.hgrid .inner-wrap {
   width: 98.95833333%;
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
+}
+/* ---------- test---------- */
+.col3 {
+  display: inline;
+  float: left;
+  width: 32.29166667%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+  margin-bottom: 24px;
 }
 /**
  * Layout style for general structure of header, navbar, main, footer
@@ -5747,6 +5769,8 @@ figure.figure-codepen {
   padding-left: 0;
 }
 li.section-header {
+  font-size: 1.25em;
+  line-height: 1.2;
   margin-top: 24px;
   margin-bottom: 12px;
   border-bottom: 1px solid #0155C0;

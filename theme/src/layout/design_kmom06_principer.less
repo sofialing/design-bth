@@ -1,0 +1,349 @@
+/**
+ * Design style for kmom03.
+ */
+
+/**
+ * Variables
+ */
+@textColor:     #333;
+@darkColor:     #0D0D0B;
+@greenColor:    #5B7546;
+@whiteColor:    #fff;
+@flashImage:    url("../image/theme/flash_kmom06_1.jpg?w=1600");
+
+
+/**
+ * General layout
+*/
+
+/* Activate grid and affect all typographic elements */
+#desinax-hgrid.activateDefaultTypography();
+
+/* Hide responsive/mobile menu */
+.rm-navbar-max {
+    display: none;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    color: @textColor;
+    #desinax-hgrid.font(@fontSizeBody, @fontFamily: @defaultFont);
+    & a {
+        color: @greenColor;
+    }
+    & a:hover {
+        text-decoration: none;
+    }
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 700;
+    letter-spacing: 0.01em;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* ---------- Header ---------- */
+.outer-wrap-header {
+    background-color: @darkColor;
+    color: @whiteColor;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    box-shadow: 0 0 25px 0px rgba(0, 0, 0, 0.6);
+}
+
+.site-logo,
+.site-logo-text-icon {
+    display: none;
+}
+
+.site-logo-text {
+    #desinax-hgrid.fontSize(@fontSizeH3);
+    & a {
+        color: @whiteColor;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-decoration: none;
+        margin-bottom: @magicNumber;
+    }
+}
+
+.rm-desktop li {
+    letter-spacing: 0.03em;
+    & a:hover {
+        text-decoration: none;
+    }
+    & li {
+        background-color: @darkColor;
+        text-align: left;
+        padding: 0.5em;
+    }
+}
+
+.rm-default a {
+    padding: 1em 0.5em;
+}
+
+
+/* ---------- Flash ---------- */
+.region-flash {
+    height: 600px;
+    background-image: @flashImage;
+    background-color: black;
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & img {
+        display: none;
+    }
+    & h2 {
+        color: @whiteColor;
+        #desinax-hgrid.fontSize(4em);
+        font-weight: 700;
+        letter-spacing: 0.01em;
+        text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.6);
+        border-bottom: 5px solid @whiteColor;
+        padding-bottom: @magicNumber / 2;
+    }
+    & .flash-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: inline-flex !important;
+    }
+}
+
+
+/* ---------- Main content ---------- */
+.inner-wrap-main {
+    padding-bottom: @magicNumber;
+}
+
+
+/* ---------- Breadcrumb & navigation ---------- */
+.next-previous .next {
+    float: right;
+    text-align: right;
+}
+
+.breadcrumb-list ul,
+.toc ul {
+    margin-top: 0;
+    padding-top: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.breadcrumb-list ul {
+    margin-top: @magicNumber;
+}
+
+.breadcrumb-list li {
+    display: inline;
+    &::after {
+        content: " » ";
+        color: @textColor;
+    }
+    &:last-child::after {
+        content: " ";
+    }
+}
+
+.breadcrumb-list a,
+.toc a,
+.next-previous a {
+    color: @textColor;
+    text-decoration: none;
+}
+
+.toc a:hover,
+.next-previous a:hover,
+.breadcrumb-list a:hover {
+    text-decoration: underline;
+    color: @greenColor;
+}
+
+.toc .selected::before {
+    content: "» "
+}
+
+
+/* ---------- Flashmessage ---------- */
+.flashmessage {
+    background-color: @greenColor;
+    color: @whiteColor;
+    & p {
+        padding: @magicNumber;
+        margin-bottom: 0;
+    }
+    & .flashmessage-icon {
+        float: right;
+        padding: @magicNumber
+    }
+}
+
+
+/* ---------- Byline ---------- */
+.author-byline {
+    background-color: #CCC;
+    padding: @magicNumber @magicNumber 0px;
+    font-weight: 700;
+    & p {
+        color: @whiteColor;
+        margin-top: 0;
+    }
+    & a {
+        color: @whiteColor;
+    }
+    & img {
+        width: @magicNumber * 4;
+        // border-radius: 50%;
+        float: left;
+        margin-right: @magicNumber;
+        margin-bottom: @magicNumber;
+    }
+}
+
+
+/* ---------- Footer---------- */
+.outer-wrap-footer {
+    padding-top: @magicNumber;
+    background-color: @darkColor;
+    color: @whiteColor;
+    & a {
+        color: @whiteColor;
+        text-decoration: none;
+    }
+    & a:hover {
+        border-bottom: 1px solid @whiteColor;
+    }
+    & ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
+    & h3 {
+        border-bottom: 0;
+    }
+}
+
+.site-footer {
+    text-align: center;
+}
+
+
+/* ---------- Stylechooser---------- */
+.region-stylechooser {
+    margin-top: 72px;
+    padding-top: @magicNumber * 2;
+    padding-bottom: @magicNumber;
+}
+
+.stylechooser {
+    max-width: 100%;
+    & fieldset {
+        max-width: 100%;
+    }
+    & select {
+        width: 100%;
+        max-width: 90%;
+    }
+}
+
+
+/* ---------- Other---------- */
+figure.figure.right.w100.me {
+    display: none;
+}
+
+.info-boxes {
+    & h4 {
+        #desinax-hgrid.fontSize(@fontSizeH5);
+        background-color: @darkColor;
+        color: @whiteColor;
+        padding-left: @magicNumber;
+        padding-right: @magicNumber;
+        padding-bottom: @magicNumber / 2;
+        padding-top: @magicNumber / 2;
+        margin: 0;
+    }
+    & img {
+        width: 100%;
+        transition: filter .5s ease-in-out;
+         -webkit-filter: grayscale(0%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+         filter: grayscale(0%); /* FF 35+ */
+     }
+    & img:hover {
+        -webkit-filter: grayscale(100%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+        filter: grayscale(100%); /* FF 35+ */
+    }
+}
+
+.start-image {
+    height: 300px;
+    background-image: @flashImage;
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+/* ---------- Hoover effect---------- */
+.hover-effect a::before,
+.hover-effect a::after {
+	display: inline-block;
+	opacity: 0;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.2s;
+	transition: transform 0.3s, opacity 0.2s;
+}
+
+.hover-effect a::before {
+	margin-right: 5px;
+	content: '[';
+	-webkit-transform: translateX(20px);
+	-moz-transform: translateX(20px);
+	transform: translateX(20px);
+}
+
+.hover-effect a::after {
+	margin-left: 5px;
+	content: ']';
+	-webkit-transform: translateX(-20px);
+	-moz-transform: translateX(-20px);
+	transform: translateX(-20px);
+}
+
+.hover-effect a:hover::before,
+.hover-effect a:hover::after,
+.hover-effect a:focus::before,
+.hover-effect a:focus::after {
+	opacity: 1;
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	transform: translateX(0px);
+}
+
+::selection {
+  background: @greenColor; /* WebKit/Blink Browsers */
+  color: @whiteColor;
+}
+
+::-moz-selection {
+  background: @greenColor; /* Gecko Browsers */
+  color: @whiteColor;
+}

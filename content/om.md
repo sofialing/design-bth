@@ -20,6 +20,21 @@ views:
             meta:
                 type: single
                 route: block/om-redovisa
+    start-image:
+        region: after-main
+        template: anax/v2/block/default
+        sort: 3
+        data:
+            meta:
+                type: single
+                route: block/start-image
+    flash-text:
+        region: flash
+        template: anax/v2/block/default
+        data:
+            meta:
+                type: single
+                route: block/flash-text
 ---
 Om kursen
 =========================
@@ -28,4 +43,4 @@ Kursen Teknisk webbdesign och användbarhet, a.k.a. design, lär webbprogrammera
 
 Kursen syftar till en orientering inom områden design och användbarhet, specifikt för tillämpningsområdet webb. Kursen har tekniken som utgångspunkt, där olika tekniker introduceras och används för att underlätta webbdesign och användbarhet för webbplatsen med syftet att skapa en korrekt och användarvänlig webbplats.
 
-![Bild på en dator](img/dator.jpg)
+[FIGURE src="image/dator.jpg?&w=900&crop-to-fit&aspect-ratio=16:10	"]

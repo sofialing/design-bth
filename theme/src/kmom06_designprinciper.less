@@ -1,0 +1,101 @@
+/*!
+ * Stylesheet for design kmom06 - design elements.
+ *
+ * This stylesheet is for the design course and kmom06, based on design elements.
+ */
+
+/**
+ * Normalize and reset the style.
+ */
+@import "normalize.css/normalize.less";
+
+
+
+/**
+ * Font Awesome.
+ */
+@import "@fortawesome/fontawesome-free/less/fontawesome.less";
+@import "@fortawesome/fontawesome-free/less/solid.less";
+@import "@fortawesome/fontawesome-free/less/brands.less";
+
+
+
+/**
+ * Internal self contained modules, save in directory module/.
+ */
+
+
+/**
+ * A responsive menu.
+ */
+@import "@desinax/responsive-menu/less/responsive-menu.less";
+
+
+
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+@import url("https://use.typekit.net/lxj4rpr.css");
+
+
+
+
+/**
+ * Import the typographic grid.
+ */
+@import "@desinax/typographic-grid/less/typography-font-families.less";
+@import "@desinax/typographic-grid/less/typography-defaults.less";
+
+// Show the grid
+html.hgrid .inner-wrap {
+    @gridImage: "../img/theme/magic-number-@{magicNumber}.png";
+    #desinax-hgrid.showGrid(@gridImage);
+}
+
+
+/**
+ * Import the vertical grid.
+ */
+@import "@desinax/vertical-grid/less/grid.less";
+@import "layout/vgrid_kmom06.less";
+
+
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+//@import "layout/design_kmom03.less";
+@import "layout/regions.less";
+@import "layout/design_kmom06_principer.less";
+@import "layout/responsive_kmom06_v2.less";
+@import "layout/blogg.less";
+
+
+
+/**
+ * My own settings, not currently in their own module.
+ */
+ // @bylineBGcolor:            #3F598E;
+@maxButtonSubmenuBgColor:  @darkColor;
+@maxButtonClickedColor:    @whiteColor;
+@maxBgColor:               @darkColor;
+@mobileBgColor:            @darkColor;
+@maxButtonSubmenuBgColor:  @darkColor;
+.rm-default ul li { box-shadow: none; }
+
+  // Default font-families
+@defaultFont:           acumin-pro, sans-serif;;
+@fontFamilyHeadings:    acumin-pro, sans-serif;;
+@fontFamilyBody:        acumin-pro, sans-serif;; @fontFamilyCode:        acumin-pro, sans-serif;;
+
+@colorH1BorderBottom:   @textColor;
+@colorH2BorderBottom:   @textColor;
+@colorH3BorderBottom:   @textColor;
+@colorH4BorderBottom:   @textColor;
+@colorH5BorderBottom:   @textColor;
+@colorH6BorderBottom:   @textColor;
+
+
+// Magic number and base fontsize
+@magicNumber:              24px;
+@fontSizeBody:             16px;

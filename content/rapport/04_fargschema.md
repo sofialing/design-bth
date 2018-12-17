@@ -20,8 +20,8 @@ För att kunna genomföra färganalysen använde jag mig av DevTools i Chrome f�
 
 H&M
 -----------------------
-<a href="img/analysis/hm_1200.png"><img src="img/analysis/hm_screen.png"></a>
-Klicka på bilden för att se hela webbsidan.
+[FIGURE src="image/analysis/hm_screen.png?w=800"]
+Klicka på [här](img/analysis/hm_1200.png) för att se hela webbsidan.
 
 <table style="border-spacing: 4px; border-collapse: separate">
 <tr>
@@ -41,8 +41,8 @@ På webbplatsen används två egna typsnitt: HM Ampersand och HM Amperserif. HM 
 
 Åhléns
 -----------------------
-<a href="img/analysis/ahlens_1200.png"><img src="img/analysis/ahlens_screen.png"></a>
-Klicka på bilden för att se hela webbsidan.
+[FIGURE src="image/analysis/ahlens_screen.png?w=800"]
+Klicka på [här](img/analysis/ahlens_1200.png) för att se hela webbsidan.
 
 <table style="border-spacing: 4px; border-collapse: separate">
 <tr>
@@ -63,8 +63,9 @@ På webbplatsen används tre typsnitt; Apercu, Apercu Mono och Noe Display. Frä
 
 Ellos
 -----------------------
-<a href="img/analysis/ellos_1200.png"><img src="img/analysis/ellos_screen.png"></a>
-Klicka på bilden för att se hela webbsidan.
+[FIGURE src="image/analysis/ellos_screen.png?w=800"]
+Klicka på [här](img/analysis/ellos_1200.png) för att se hela webbsidan.
+
 <table style="border-spacing: 4px; border-collapse: separate">
 <tr>
 <td style="height: 50px; width: 50px; border: 1px solid black; background-color: #fff">
