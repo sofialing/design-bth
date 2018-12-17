@@ -1,6 +1,13 @@
 Revision history
 ====================
 
+V6.0.0 (2018-12-17)
+* Added report for kmom06
+* Added reports for design elements and design principles
+* Added design principles analysis for kmom06
+* Added new themes and extra content for kmom06
+
+
 V5.0.0 (2018-12-08)
 * Changed default stylesheet to kmom05
 * Added report for kmom05
