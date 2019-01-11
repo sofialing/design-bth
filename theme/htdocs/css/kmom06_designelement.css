@@ -5274,6 +5274,9 @@ body a:hover {
 .region-flash img {
   display: none;
 }
+.region-flash.flash-text {
+  display: none;
+}
 /* ---------- Main content ---------- */
 .inner-wrap-main,
 .inner-wrap-breadcrumb {
